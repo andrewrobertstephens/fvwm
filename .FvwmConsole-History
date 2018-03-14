@@ -1,0 +1,40 @@
+FvwmScript FvwmScript-Battery
+FvwmScript FvwmScript-Battery
+FvwmScript FvwmScript-Battery
+FvwmScript FvwmScript-Battery
+FvwmScript FvwmScript-Battery
+FvwmScript FvwmScript-Battery
+FvwmScript FvwmScript-Battery
+FvwmScript FvwmScript-Battery
+FvwmScript FvwmScript-Volume
+FvwmForm FvwmForm-XDGMenu-Config
+FvwmInfo
+FvwmModule FvwmInfo
+Module FvwmIconBox
+Module FvwmIconMan
+move
+Menu MenuPlaces
+Menu applications
+Menu arch-applications
+Menu MenuSystem
+Menu MenuSystem
+Menu MenuBatteryPopup
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet
+VolumeGet

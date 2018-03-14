@@ -1,0 +1,39 @@
+# default colorset
+Colorset 0 RootTransparent, fg white
+# inactive window
+Colorset 1 bg white, fg gray50, hi white, sh white
+# active window
+Colorset 2 bg white, fg gray25, hi white, sh white
+# inactive menu item
+Colorset 3 vgradient 2 white gray92, fg gray25, hi white, sh white
+# active menu item
+Colorset 4 vgradient 50 gray50 black, fg white
+# grayed menu item
+Colorset 5 fg gray
+# panel
+Colorset 6 vgradient 2 white gray92, fg gray25, hi white, sh white
+# iconman active window
+Colorset 7 bg gray40, fg white
+# dock
+Colorset 8 roottransparent, tint white 70, bg white, fg black, hi white, sh white
+# hilighted dock item
+Colorset 9 roottransparent, tint white 70
+# inactive page
+Colorset 10 vgradient 50 gray80 gray50
+# active page
+Colorset 11 vgradient 50 gray50 black
+# windows
+Colorset 12 bg white
+
+TitleStyle RightJustified Height 22 -- Flat
+TitleStyle Inactive TiledPixmap title.png -- Flat
+TitleStyle Active TiledPixmap title.png -- Flat
+ButtonStyle All Inactive Pixmap inactive.png -- Flat
+ButtonStyle 1 Active Pixmap menu-active.png -- Flat
+ButtonStyle 2 Active Pixmap close-active.png -- Flat
+ButtonStyle 4 Active Pixmap maximize-active.png -- Flat
+ButtonStyle 6 Active Pixmap iconify-active.png -- Flat
+ButtonStyle All -- UseTitleStyle
+BorderStyle Simple -- NoInset Flat
+
+SetEnv FVWM_PANEL_DARK 0

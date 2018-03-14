@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# create a backup of .fvwm directory and take a screenshot
+
+today=`date +%Y%m%d`
+mkdir -p $HOME/Documents/Fvwm
+cd $HOME
+echo Buidling archive...
+tar -cvf "$HOME/Documents/fvwm/fvwm$today.tar" ".fvwm/"
+echo Waiting 5 seconds before taking screenshot...
+sleep 5
+scrot "$HOME/Documents/fvwm/fvwm$today.jpg"
+echo Done
+$FVWM_FILER $HOME/Documents/fvwm
+

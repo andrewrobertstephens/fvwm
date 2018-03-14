@@ -1,0 +1,759 @@
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+compton: no process found
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+/bin/sh: /home/andrew/.fvwm/bin/notify: No such file or directory
+/bin/sh: /home/andrew/.fvwm/bin/notify: No such file or directory
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+/bin/sh: /home/andrew/.fvwm/bin/notify: No such file or directory
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+/bin/sh: /home/andrew/.fvwm/bin/notify: No such file or directory
+/bin/sh: /home/andrew/.fvwm/bin/notify: No such file or directory
+/bin/sh: /home/andrew/.fvwm/bin/notify: No such file or directory
+/bin/sh: /home/andrew/.fvwm/bin/notify: No such file or directory
+/bin/sh: /home/andrew/.fvwm/bin/notify: No such file or directory
+/bin/sh: /home/andrew/.fvwm/bin/notify: No such file or directory
+/bin/sh: /home/andrew/.fvwm/bin/notify: No such file or directory
+[13395:13680:0905/195502.043890:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/195502.043917:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13514:0905/195503.096547:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_browser from binding interface: content::mojom::Child exposed by: nacl_loader
+[3,610981696:23:55:04.425991] Native Client module will be loaded at base address 0x00005b8200000000
+[13395:13680:0905/195705.522615:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/195705.522641:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/195909.022229:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/195909.022254:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/200112.514033:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/200112.514071:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/200316.009233:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/200316.009259:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/200519.494403:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/200519.494428:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/200556.153172:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/200556.153199:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/200647.007369:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/200647.007393:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/200809.112236:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/200809.112261:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/201012.585462:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/201012.585493:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+/home/andrew/.fvwm/bin/wifi_icon: line 17: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 19: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 21: [: -gt: unary operator expected
+[13395:13680:0905/212747.158232:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/212747.158264:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13514:0905/212748.336207:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -137
+[13395:13680:0905/212944.956889:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/212944.956911:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/213121.634292:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/213121.634320:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/213240.555949:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/213240.555972:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/213258.752234:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/213258.752256:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/213342.839776:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/213342.839800:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/213427.827931:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/213427.827953:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/213631.301519:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/213631.301544:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/213834.805430:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/213834.805468:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/214038.290779:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/214038.290805:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/214241.781048:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/214241.781070:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/214309.415658:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/214309.415682:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/214512.918608:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/214512.918631:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/214716.427307:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/214716.427327:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/214919.922397:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/214919.922420:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/215123.396978:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/215123.397002:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+/home/andrew/.fvwm/bin/wifi_icon: line 17: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 19: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 21: [: -gt: unary operator expected
+[13395:13514:0905/220746.331116:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -137
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0905/220901.191151:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/220901.191171:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/220947.331117:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/220947.331143:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/221049.800275:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/221049.800304:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/221111.519235:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/221111.519259:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/221153.201053:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/221153.201093:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/221237.523883:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/221237.523906:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/221309.820894:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/221309.820932:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/221357.270206:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/221357.270226:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/221427.244739:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/221427.244786:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/221446.731473:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/221446.731502:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/221512.206778:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/221512.206808:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/221549.887224:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/221549.887252:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/221614.976618:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/221614.976646:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0905/221751.172711:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0905/221751.172733:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+/home/andrew/.fvwm/bin/wifi_icon: line 17: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 19: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 21: [: -gt: unary operator expected
+[13395:13514:0906/075924.236510:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -137
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0906/080027.800937:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/080027.800956:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/080131.812934:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/080131.812961:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/080306.697588:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/080306.697629:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/080345.205254:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/080345.205281:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/081022.380228:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/081022.380253:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/082136.683203:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/082136.683226:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/082830.067780:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/082830.067803:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/082858.816449:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/082858.816472:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/083249.325657:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/083249.325681:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/083436.389341:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/083436.389365:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/083527.625590:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/083527.625612:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+/bin/sh: /home/andrew/.fvwm/bin/notify: No such file or directory
+/home/andrew/.fvwm/bin/wifi_icon: line 17: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 19: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 21: [: -gt: unary operator expected
+[13395:13514:0906/143713.225332:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -137
+[13395:13680:0906/143713.440735:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/143713.440757:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0906/143911.639804:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/143911.639842:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+Gtk-Message: GtkDialog mapped without a transient parent. This is discouraged.
+[13395:13514:0906/144145.533740:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+[WARNING:flash/platform/pepper/pep_module.cpp(63)] SANDBOXED
+[13395:13680:0906/144145.862396:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/144145.862418:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+/bin/sh: /home/andrew/.fvwm/bin/notify: No such file or directory
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+sh: -c: line 0: unexpected EOF while looking for matching `"'
+sh: -c: line 1: syntax error: unexpected end of file
+/bin/sh: /home/andrew/.fvwm/bin/notify: No such file or directory
+[13395:13680:0906/144349.407546:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/144349.407569:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[13395:13680:0906/144552.894593:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/144552.894617:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0906/144754.998237:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/144754.998276:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/144958.657169:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/144958.657199:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/145109.489076:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/145109.489102:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/145300.970389:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/145300.970414:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/145504.621881:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/145504.621903:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+/home/andrew/.fvwm/bin/wifi_icon: line 17: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 19: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 21: [: -gt: unary operator expected
+[13395:13514:0906/161605.364744:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -137
+[13395:13680:0906/161605.581662:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/161605.581689:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0906/161802.064467:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/161802.064489:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/161920.063956:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/161920.063986:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/162031.288812:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/162031.288837:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/162101.052192:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/162101.052230:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/162202.514164:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/162202.514191:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/162230.430958:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/162230.430983:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/162256.289173:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/162256.289212:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/162459.950385:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/162459.950413:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/162521.526712:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/162521.526741:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/162538.313789:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/162538.313810:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/162558.430612:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/162558.430640:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/162656.429244:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/162656.429273:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/162712.563096:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/162712.563118:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/162855.989020:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/162855.989048:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/162936.006829:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/162936.006864:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/163022.519753:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/163022.519787:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/163103.629791:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/163103.629827:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/163322.454309:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/163322.454333:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/163526.006792:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/163526.006833:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/163729.483180:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/163729.483221:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0906/163932.987858:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/163932.987887:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/164136.474316:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/164136.474338:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+/home/andrew/.fvwm/bin/wifi_icon: line 17: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 19: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 21: [: -gt: unary operator expected
+[13395:13514:0906/174017.671521:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -137
+[13395:13680:0906/174017.885826:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/174017.885854:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0906/174134.186606:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/174134.186633:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/174300.437730:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/174300.437752:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/174326.794623:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/174326.794658:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/174401.439524:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/174401.439573:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/174453.772539:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/174453.772572:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/174903.902575:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/174903.902602:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/175107.392625:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/175107.392663:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/175310.897575:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/175310.897601:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/175630.986681:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/175630.986715:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/175834.463980:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/175834.464008:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/180037.990585:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/180037.990609:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/180241.469800:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/180241.469828:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/180444.956259:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/180444.956285:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/180648.451749:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/180648.451775:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/180851.949722:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/180851.949748:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/181055.435985:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/181055.436012:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/181258.949057:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/181258.949082:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/181341.754838:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/181341.754872:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/181545.236790:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/181545.236833:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/181748.741307:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/181748.741350:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/181952.213602:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/181952.213627:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/182155.709181:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/182155.709224:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/182359.198410:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/182359.198437:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/182602.704435:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/182602.704486:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/182806.213289:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/182806.213315:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/183009.684881:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/183009.684913:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/183209.715050:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/183209.715073:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/183230.277945:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/183230.277978:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+/home/andrew/.fvwm/bin/wifi_icon: line 17: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 19: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 21: [: -gt: unary operator expected
+[13395:13514:0906/183331.206937:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -137
+[13395:13680:0906/183331.432960:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/183331.432989:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/183544.113073:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/183544.113100:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/183708.322103:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/183708.322146:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/183911.976161:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/183911.976190:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/184115.515958:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/184115.515990:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/184319.173188:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/184319.173216:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0906/184522.677625:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/184522.677658:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+/home/andrew/.fvwm/bin/wifi_icon: line 17: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 19: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 21: [: -gt: unary operator expected
+[13395:13514:0906/184651.285571:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -137
+[13395:13680:0906/184651.526537:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0906/184651.526561:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+/home/andrew/.fvwm/bin/wifi_icon: line 17: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 19: [: -gt: unary operator expected
+/home/andrew/.fvwm/bin/wifi_icon: line 21: [: -gt: unary operator expected
+[13395:13514:0907/043104.351493:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -137
+[13395:13680:0907/043105.053482:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/043105.053567:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/043317.457502:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/043317.457541:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x2800001.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+[13395:13680:0907/043343.841139:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/043343.841166:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/043400.501259:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/043400.501293:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x2800001.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x2800001.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+[13395:13680:0907/043604.194805:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/043604.194834:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/043717.078056:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/043717.078092:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x2800001.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[13395:13680:0907/043920.572271:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/043920.572297:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[13395:13680:0907/044124.071236:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/044124.071264:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[13395:13680:0907/044327.566045:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/044327.566073:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x2800001.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x1400022.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x1a00022.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x1a00022.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x1400022.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+[13395:13680:0907/044531.106471:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/044531.106504:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x2800001.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x2800001.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x1400022.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+[13395:13680:0907/044731.593237:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/044731.593269:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x2800001.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+[13395:13680:0907/044935.231715:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/044935.231749:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x2800001.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+composite: Ignoring invalid time value `/home/andrew/.fvwm/tmp/0x1400022.png' @ warning/png.c/MagickPNGWarningHandler/1665.
+[13395:13680:0907/045138.890675:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/045138.890702:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/045321.250600:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/045321.250642:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0907/045524.756023:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/045524.756051:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/045625.012516:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/045625.012545:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/045828.681471:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/045828.681499:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/045902.999300:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/045902.999344:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/045946.431673:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/045946.431708:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/050130.842454:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/050130.842480:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/050334.429423:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/050334.429465:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/050537.932182:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/050537.932210:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/050741.426568:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/050741.426596:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/050944.927754:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/050944.927785:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/051011.597600:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/051011.597625:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/051034.243051:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/051034.243082:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13514:0907/051039.551775:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+[WARNING:flash/platform/pepper/pep_module.cpp(63)] SANDBOXED
+[13395:13680:0907/051058.152253:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/051058.152280:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0907/051219.373175:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/051219.373208:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/051422.837437:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/051422.837465:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/051441.681039:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/051441.681074:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/051645.184584:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/051645.184606:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/051702.998161:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/051702.998185:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/051819.181116:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/051819.181149:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/052022.680554:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/052022.680578:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/052226.164769:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/052226.164795:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/052303.526642:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/052303.526671:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/052440.037773:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/052440.037806:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/052643.599733:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/052643.599775:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/052847.090529:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/052847.090559:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/053050.661081:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/053050.661113:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/053254.302767:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/053254.302811:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/053345.028653:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/053345.028691:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/053548.683247:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/053548.683272:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/053642.109738:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/053642.109760:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/053727.264023:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/053727.264045:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/053903.424042:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/053903.424067:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/054107.030924:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/054107.030945:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/054310.518779:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/054310.518798:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[fvwm][menu_func]: <<ERROR>> No such menu MenuApplications
+[13395:13680:0907/054514.027653:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/054514.027674:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/054717.508894:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/054717.508921:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[fvwm][menu_func]: <<ERROR>> No such menu XDGMenu
+[fvwm][menu_func]: <<ERROR>> No such menu XDGMenu
+[fvwm][menu_func]: <<ERROR>> No such menu XDGMenu
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+General::FileSystem::clean_dir() called too early to check prototype at /usr/share/fvwm/perllib/General/FileSystem.pm line 585.
+[FvwmForm-XDGMenu-Config][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0907/054921.003644:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/054921.003679:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0907/055124.505924:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/055124.505949:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0907/055158.213773:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/055158.213793:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/055352.344534:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/055352.344559:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/055429.736428:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/055429.736458:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0907/055633.331085:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/055633.331110:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/055836.823250:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/055836.823275:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0907/060040.310620:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/060040.310644:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+
+** (pcmanfm:31789): WARNING **: XDG_TEMPLATES_DIR is set to invalid path, ignoring it
+[13395:13680:0907/060243.824884:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/060243.824910:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0907/060447.297857:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/060447.297883:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0907/060650.808087:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/060650.808111:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0907/060854.278421:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/060854.278456:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[FvwmForm-Notify][FlocaleGetFontSet]: (8x13bold) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0907/061057.799829:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/061057.799869:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0907/061301.272171:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/061301.272206:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/061352.759592:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/061352.759615:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[FVWM_SMDEBUG] Saving /home/andrew/.fvwm/.fs-restart-asus:0
+[FVWM_SMDEBUG] Loading /home/andrew/.fvwm/.fs-restart-asus:0
+[fvwm][style_parse_and_set_window_style]: <<ERROR>> Bad style option: "xft:sans:size=7.5:bold:antialias=True"
+Error reading SVG:Error opening file /home/andrew/.fvwm/icons/current/game.svg: No such file or directory
+
+[FvwmDock][FlocaleGetFontSet]: (fixed) Missing font charsets:
+ISO8859-2, ISO8859-3, ISO8859-4, ISO8859-5, KOI8-R, ISO8859-7, ISO8859-9, ISO8859-13, ISO8859-14, ISO8859-15, JISX0208.1983-0, KSC5601.1987-0, GB2312.1980-0, JISX0201.1976-0, ISO10646-1
+[13395:13680:0907/061554.336719:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/061554.336747:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices
+[13395:13680:0907/061757.826380:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.NetworkManager.GetDevices: object_path= /org/freedesktop/NetworkManager: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.NetworkManager was not provided by any .service files
+[13395:13680:0907/061757.826409:ERROR:networking_private_linux.cc(725)] Failed to enumerate network devices

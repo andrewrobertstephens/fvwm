@@ -1,0 +1,42 @@
+# default colorset
+Colorset 0 RootTransparent, fg Black
+# inactive window
+Colorset 1 vgradient 2 gray100 gray90, bg white, fg black, hi white, sh white
+# active window
+Colorset 2 vgradient 2 gray20 black, bg black, fg white, hi black, sh black
+# inactive menu item
+Colorset 3 RootTransparent, Tint black 70, fg white, bg black, hi black, sh black
+# active menu item
+Colorset 4 vgradient 2 gray100 gray90, bg white, fg black
+# grayed menu item
+Colorset 5 fg gray
+# panel
+Colorset 6 vgradient 2 gray100 gray90, fg black, hi white, sh white
+# iconman focus
+Colorset 7 vgradient 2 gray30 black, fg white, hi white, sh white
+# dock
+Colorset 8 roottransparent, tint black 50, bg black, hi black, sh black
+# dock hilight
+Colorset 9 roottransparent, tint black 50, bg gray, fg white
+# pager
+Colorset 10 vgradient 2 gray50 gray30
+Colorset 11 vgradient 2 gray30 black
+Colorset 12 bg white
+
+TitleStyle LeftJustified Height 20 -- Flat
+TitleStyle Inactive (Colorset 1 -- Flat) Active (Colorset 2 -- Flat)
+ButtonStyle 1 Inactive Pixmap menu.png -- Flat
+ButtonStyle 1 ActiveUp Pixmap menu.png -- Flat
+ButtonStyle 1 ActiveDown Pixmap menu.png -- Flat
+ButtonStyle 2 ActiveUp Pixmap close.png -- Flat
+ButtonStyle 2 ActiveDown Pixmap close.png -- Flat
+ButtonStyle 2 Inactive Pixmap close.png -- Flat
+ButtonStyle 6 ActiveUp Pixmap minimize.png -- Flat
+ButtonStyle 6 ActiveDown Pixmap minimize.png -- Flat
+ButtonStyle 6 Inactive Pixmap minimize.png -- Flat
+ButtonStyle 4 ActiveUp Pixmap maximize.png -- Flat
+ButtonStyle 4 ActiveDown Pixmap maximize.png -- Flat
+ButtonStyle 4 Inactive Pixmap maximize.png -- Flat
+ButtonStyle All -- UseTitleStyle
+BorderStyle Simple
+

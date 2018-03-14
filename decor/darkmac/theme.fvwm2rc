@@ -1,0 +1,46 @@
+SetEnv FVWM_TITLE_HEIGHT 24
+SetEnv FVWM_WINDOW_BUTTON_SIZE '14x14'
+SetEnv FVWM_PANEL_DARK true
+SetEnv FVWM_PANEL_HEIGHT 24
+
+# default colorset
+Colorset 0 RootTransparent, fg Black
+# inactive window
+Colorset 1 VGradient $[FVWM_TITLE_HEIGHT] #ecf4ff #d1cfd2, fg #5e6770, hi #ecf4ff, sh #ecf4ff 
+# active window
+Colorset 2 VGradient $[FVWM_TITLE_HEIGHT] #ecf4ff #d1cfd2, fg #5e6770, hi #d1cfd2, sh #d1cfd2 
+# inactive menu item
+Colorset 3 RootTransparent, tint black 70, fg white
+# active menu item
+Colorset 4 bg #7face5, fg White
+# grayed menu item
+Colorset 5 fg gray
+# panel
+Colorset 6 RootTransparent, tint black 60, fg white
+# iconman active window / panel button press
+Colorset 7 bg gray40, fg white
+# dock
+Colorset 8 roottransparent, tint black 50, bg white
+# hilighted dock item
+Colorset 9 roottransparent, tint black 50, bg white
+# inactive page
+Colorset 10 bg gray, fg black
+# active page
+Colorset 11 bg black, fg white
+# windows
+Colorset 12 bg white
+
+TitleStyle Centered Height $[FVWM_TITLE_HEIGHT] -- Flat
+TitleStyle Inactive (Colorset 1 -- Flat) Active (Colorset 2 -- Flat)
+#ButtonStyle 1 Active Pixmap menu-active.png -- Flat
+#ButtonStyle 2 Active Pixmap close-active.png -- Flat
+#ButtonStyle 4 Active Pixmap maximize-active.png -- Flat
+#ButtonStyle 6 Active Pixmap iconify-active.png -- Flat
+ButtonStyle $[FVWM_CLOSE_BUTTON] Active Pixmap close.svg:$[FVWM_WINDOW_BUTTON_SIZE] -- Flat
+ButtonStyle $[FVWM_CLOSE_BUTTON] Inactive Pixmap close.svg:$[FVWM_WINDOW_BUTTON_SIZE] -- Flat
+ButtonStyle $[FVWM_MAXIMIZE_BUTTON] Active Pixmap maximize.svg:$[FVWM_WINDOW_BUTTON_SIZE] -- Flat
+ButtonStyle $[FVWM_MAXIMIZE_BUTTON] Inactive Pixmap maximize.svg:$[FVWM_WINDOW_BUTTON_SIZE] -- Flat
+ButtonStyle $[FVWM_MINIMIZE_BUTTON] Active Pixmap minimize.svg:$[FVWM_WINDOW_BUTTON_SIZE] -- Flat
+ButtonStyle $[FVWM_MINIMIZE_BUTTON] Inactive Pixmap minimize.svg:$[FVWM_WINDOW_BUTTON_SIZE] -- Flat
+ButtonStyle All -- UseTitleStyle Flat
+BorderStyle Simple

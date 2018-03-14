@@ -1,0 +1,37 @@
+# default colorset
+Colorset 0 RootTransparent, fg Black
+# inactive window
+Colorset 1 roottransparent, fg gray, hi white, sh white, IconAlpha 75
+# active window
+Colorset 2 bg white, fg black, hi white, sh white, IconAlpha 75
+# inactive menu item
+Colorset 3 bg white, fg black, sh white, hi white
+# active menu item
+Colorset 4 VGradient 20 Gray Black, fg White
+# grayed menu item
+Colorset 5 fg gray
+# panel
+Colorset 6 bg white, fg black, sh white, hi white
+# iconman active window / panel button press
+Colorset 7 bg gray40, fg white
+# dock
+Colorset 8 roottransparent, tint black 50, bg white
+# hilighted dock item
+Colorset 9 roottransparent, tint black 50, bg white
+# inactive page
+Colorset 10 bg gray, fg black
+# active page
+Colorset 11 bg black, fg white
+# windows
+Colorset 12 bg white
+
+TitleStyle Centered Height 21 -- Flat
+TitleStyle Inactive TiledPixmap title.png -- Flat
+TitleStyle Active TiledPixmap title.png -- Flat
+ButtonStyle All Inactive Pixmap inactive.png -- Flat
+ButtonStyle 1 Active Pixmap menu-active.png -- Flat
+ButtonStyle 2 Active Pixmap close-active.png -- Flat
+ButtonStyle 4 Active Pixmap maximize-active.png -- Flat
+ButtonStyle 6 Active Pixmap iconify-active.png -- Flat
+BorderStyle Simple
+

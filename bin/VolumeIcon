@@ -1,0 +1,26 @@
+#!/bin/sh
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+if [ $FVWM_PANEL_DARK == true ]; then
+    EXTRA=-white
+else
+    EXTRA=
+fi
+
+size=$((${FVWM_PANEL_HEIGHT}-4))
+
+SIZE=${size}x${size}
+
+volume=`pulseaudio-ctl full-status | awk {'print $1'}`
+if [ $volume -gt 66 ]; then
+    icon=$FVWM_USERDIR/panel/volume-100${EXTRA}.svg:${SIZE}
+elif [ $volume -gt 33 ]; then
+    icon=$FVWM_USERDIR/panel/volume-66${EXTRA}.svg:${SIZE}
+elif [ $volume -eq 0 ]; then
+    icon=$FVWM_USERDIR/panel/mute${EXTRA}.svg:${SIZE}
+else
+    icon=$FVWM_USERDIR/panel/volume-33${EXTRA}.svg:${SIZE}
+fi
+
+echo $icon
