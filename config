@@ -20,10 +20,10 @@ SetEnv FVWM_PANEL_HEIGHT 24
 SetEnv FVWM_PANEL_DARK false
 SetEnv FVWM_THUMBNAIL_SIZE 128
 SetEnv FVWM_BACKGROUNDS '$[HOME]/.backgrounds'
-PipeRead 'echo SetEnv FVWM_STRUT_LEFT $(($[FVWM_ICON_SIZE]+20))'
-SetEnv FVWM_STRUT_RIGHT 10
-PipeRead 'echo SetEnv FVWM_STRUT_TOP $(($[FVWM_PANEL_HEIGHT]+10))'
-SetEnv FVWM_STRUT_BOTTOM 10
+#PipeRead 'echo SetEnv FVWM_STRUT_LEFT $(($[FVWM_ICON_SIZE]+20))'
+#SetEnv FVWM_STRUT_RIGHT 10
+#PipeRead 'echo SetEnv FVWM_STRUT_TOP $(($[FVWM_PANEL_HEIGHT]+10))'
+#SetEnv FVWM_STRUT_BOTTOM 10
 SetEnv FVWM_FONT 'xft:$[FVWM_FONT_NAME]:size=$[FVWM_FONT_SIZE]:bold:antialias=True'
 
 SetEnv FVWM_CLOSE_BUTTON 2
@@ -70,7 +70,6 @@ Key Tab A M WindowList Root c c CurrentDesk, NoGeometry, CurrentAtEnd, Iconified
 DestroyFunc Backlight
 AddToFunc Backlight
 + I PipeRead 'xbacklight $0'
-+ I PipeRead 'echo Notify "Brightness:\\ `xbacklight -get`"'
 
 Key XF86MonBrightnessDown A N Backlight "-dec 5"
 Key XF86MonBrightnessUp A N Backlight "-inc 5"
@@ -81,6 +80,7 @@ Key XF86MonBrightnessUp A N Backlight "-inc 5"
 Key XF86AudioLowerVolume A N Exec exec sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%" 
 Key XF86AudioRaiseVolume A N Exec exec sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"
 
+Key I WTFS246 4 Thumbnail
 Key Return WTFS246 4 StartReturn
 Key Left WTFS246 4 SnapLeft
 Key Right WTFS246 4 SnapRight
@@ -214,7 +214,7 @@ Style "FvwmPanel" NoTitle, Sticky, WindowListSkip, !Handles, FixedSize, BorderCo
 
 DestroyFunc SystemTray
 AddToFunc SystemTray
-+ I Exec exec stalonetray --geometry 1x1 --max-geometry 4x1 --grow-gravity E --icon-gravity W --kludges force_icons_size -i 16 --parent-bg true -d none
++ I Exec exec stalonetray --geometry 1x1 --grow-gravity E --icon-gravity W --kludges force_icons_size -i 16 --parent-bg true -d none
 
 DestroyModuleConfig FvwmPanel: *
 *FvwmPanel: Geometry $[vp.width]x$[FVWM_PANEL_HEIGHT]+0+0
@@ -229,7 +229,7 @@ DestroyModuleConfig FvwmPanel: *
 *FvwmPanel: (8x1, Id PlacesMenuButton, Left, Title "Places", Action(Mouse 1) `Menu MenuPlaces Rectangle +$left+$[FVWM_PANEL_HEIGHT] 0 -0m`)
 #*FvwmPanel: (80x1, Left, Swallow "FvwmIconMan" "FvwmIconMan")
 *FvwmPanel: (80x1)
-*FvwmPanel: (10x1, Right, Swallow (NoClose, UseOld) "stalonetray" SystemTray)
+*FvwmPanel: (25x1, Right, Swallow (NoClose, UseOld) "stalonetray" SystemTray)
 *FvwmPanel: (25x1, Padding 20 2, Swallow "FvwmPager" "FvwmPager 0 3")
 #*FvwmPanel: (4x1, Swallow "FvwmScript-Wifi" `FvwmScript FvwmScript-Wifi`)
 #*FvwmPanel: (4x1, Swallow "FvwmScript-Battery" `FvwmScript FvwmScript-Battery`)
@@ -260,7 +260,7 @@ DestroyModuleConfig FvwmDock: *
 *FvwmDock: Padding 3 3
 FuncDockButton terminal $[FVWM_TERMINAL]
 FuncDockButton filer $[FVWM_FILER]
-FuncDockButton editor '$[FVWM_EDITOR]'
+FuncDockButton editor $[FVWM_EDITOR]
 FuncDockButton browser $[FVWM_BROWSER]
 FuncDockButton gimp gimp 
 FuncDockButton inkscape inkscape
@@ -310,7 +310,6 @@ DestroyModuleConfig FvwmScript: *
 # ===========================================================================
 
 Style "FvwmForm-*" NoTitle
-Style "FvwmForm-Notify" NeverFocus, StaysOnTop, Sticky, WindowListSkip, !Borders
 
 DestroyModuleConfig FvwmForm-ManPage: *
 *FvwmForm-ManPage: Colorset 3
@@ -328,13 +327,6 @@ DestroyModuleConfig FvwmForm-ManPage: *
 *FvwmForm-ManPage: Command nop
 *FvwmForm-ManPage: Button quit "View..." ^M
 *FvwmForm-ManPage: Command ManPage $(Command)
-
-DestroyModuleConfig FvwmForm-Notify: *
-*FvwmForm-Notify: Geometry -10-10
-*FvwmForm-Notify: Colorset 13
-*FvwmForm-Notify: Font 'xft:$[FVWM_FONT_NAME]:size=16:antialias=True'
-*FvwmForm-Notify: Text "$MESSAGE"
-*FvwmForm-Notify: Timeout 5 Nop
 
 DestroyModuleConfig FvwmForm-Quit: *
 *FvwmForm-Quit: Colorset 3
@@ -443,7 +435,6 @@ PipeRead 'fvwm-menu-desktop --desktop lxde --without-titles --include-items none
 
 DestroyFunc Background
 AddToFunc Background
-+ I Notify 'Setting background for desktop $[desk.n]...'
 + I PipeRead 'convert -resize $[vp.width] "$0" $FVWM_USERDIR/background$[desk.n].png; \
               convert -fill black -colorize 50% "$0" $FVWM_USERDIR/pager/background$[desk.n].png'
 + I Function PagerColorsets
@@ -472,10 +463,6 @@ AddToFunc FuncChangeDecor
 + I PipeRead 'ln -s "$0" $[FVWM_USERDIR]/decor/current'
 + I Restart
 
-DestroyFunc FuncMenuDecor
-AddToFunc FuncMenuDecor
-
-
 DestroyMenu MenuDecor
 AddToMenu MenuDecor
 + DynamicPopupAction PipeRead 'echo DestroyMenu MenuDecor; \
@@ -496,7 +483,6 @@ AddToFunc FuncChangeIcons
 + I PipeRead 'rm $[FVWM_USERDIR]/icons/current'
 + I PipeRead 'ln -s "$0" $[FVWM_USERDIR]/icons/current'
 + I Restart
-
 
 DestroyMenu MenuIcons
 AddToMenu MenuIcons
@@ -552,15 +538,12 @@ AddToMenu MenuFvwm
 + "Man" Popup MenuMan
 + "fvwm-errors" Exec exec $[FVWM_TERMINAL] -e tail -f $[FVWM_USERDIR]/fvwm-errors
 
-
-
 DestroyMenu MenuPlaces
 AddToMenu MenuPlaces
 + MissingSubMenuFunction FuncFvwmMenuDirectory
 + "$[HOME]" Popup $[HOME]
-+ "$[HOME]/Documents" Popup $[HOME]/Documents
 + "$[HOME]/Downloads" Popup $[HOME]/Downloads
-+ "$[HOME]/Music" Popup $[HOME]/Music
++ "$[HOME]/MEGA" Popup $[HOME]/MEGA
 
 DestroyMenu MenuSettings
 AddToMenu MenuSettings
@@ -576,20 +559,6 @@ AddToMenu MenuSystem
 + "Kill Window (XKill)" Exec exec xkill
 + "Restart (Fvwm)" Restart
 + "Quit (Fvwm)" FvwmForm FvwmForm-Quit
-
-DestroyMenu MenuVolume
-AddToMenu MenuVolume
-+ "100" VolumeSet 'set 100'
-+ " 90" VolumeSet 'set 90'
-+ " 80" VolumeSet 'set 80'
-+ " 70" VolumeSet 'set 70'
-+ " 60" VolumeSet 'set 60'
-+ " 50" VolumeSet 'set 50'
-+ " 40" VolumeSet 'set 40'
-+ " 30" VolumeSet 'set 30'
-+ " 20" VolumeSet 'set 20'
-+ " 10" VolumeSet 'set 10'
-+ "  0" VolumeSet 'set 1'
 
 # ===========================================================================
 # Window Menus
@@ -655,16 +624,6 @@ AddToFunc ThumbnailRestore
 # Functions (General)
 # ===========================================================================
 
-DestroyFunc Notify 
-AddToFunc Notify
-+ I KillModule FvwmForm FvwmForm-Notify
-+ I FvwmForm FvwmForm-Notify MESSAGE="$0"
-+ I Wait FvwmForm-Notify
-
-DestroyFunc NotifyBattery
-AddToFunc NotifyBattery
-+ I PipeRead 'echo Notify \\"`acpi`\\"'
-
 DestroyFunc SnapLeft
 AddToFunc SnapLeft
 + I ResizeMoveMaximize 49wa 95wa +0 +0
@@ -676,12 +635,6 @@ AddToFunc SnapRight
 DestroyFunc StartReturn
 AddToFunc StartReturn
 + I ThisWindow (!Transient) Maximize
-
-DestroyFunc VolumeSet
-AddToFunc VolumeSet
-#+ I PipeRead 'amixer set Master $0 >> /dev/null'
-+ I PipeRead 'pulseaudio-ctl $0'
-+ I PipeRead 'echo Notify "Volume:\\ `pulseaudio-ctl full-status`"'
 
 DestroyFunc SendToDesk
 AddToFunc SendToDesk
@@ -704,12 +657,14 @@ AddToFunc Composite
 DestroyFunc StartFunction
 AddToFunc StartFunction
 + I Test (Init) Exec exec xscreensaver -no-splash &
++ I Test (Init) Exec exec dunst &
 + I Test (Init) Exec exec nm-applet &
-+ I Test (Init) Exec exec megasync &
-+ I Test (Init) Exec exec cbatticon -i symbolic &
-+ I Test (Init) Exec exec pasystray &
++ I Test (Init) Exec exec cbatticon -n &
++ I Test (Init) Exec exec pasystray -a &
 + I Test (Init) Exec exec pulseaudio --start
 + I Test (Init) PipeRead 'rm $[FVWM_USERDIR]/tmp/*'
+# won't show up in tray unless I delay it a bit
++ I Test (Init) Schedule 5000 Exec exec megasync
 + I Test (Restart) All (Iconic) ThumbnailAgain
 + I Exec exec xrdb ~/.Xresources
 + I Read $[FVWM_USERDIR]/decor/current/theme.fvwm2rc
