@@ -1,6 +1,0 @@
-#!/bin/sh
-string=`acpi`
-IFS=', ' read -r -a array <<< "$string"
-level=${array[3]}
-echo ${level::-1}
-

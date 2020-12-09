@@ -1,0 +1,9 @@
+#!/bin/sh
+echo DestroyMenu recreate MenuDecor
+echo AddToMenu MenuDecor
+for i in $FVWM_USERDIR/decor/*; do
+    shortname=`basename $i`
+    if [ "$shortname" != "current" ]; then
+        echo + \"$shortname\" Exec exec $FVWM_USERDIR/bin/decor $i
+    fi
+done

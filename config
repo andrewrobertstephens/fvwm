@@ -1,11 +1,10 @@
-
 # vi:syntax=fvwm
 
 # ===========================================================================
 # Environment Variable
 # ===========================================================================
 
-SetEnv FVWM_TERMINAL xterm
+SetEnv FVWM_TERMINAL kitty
 SetEnv FVWM_EDITOR gvim
 SetEnv FVWM_BROWSER chromium
 SetEnv FVWM_FILER pcmanfm
@@ -21,9 +20,10 @@ SetEnv FVWM_PANEL_DARK false
 SetEnv FVWM_THUMBNAIL_SIZE 128
 SetEnv FVWM_BACKGROUNDS '$[HOME]/.backgrounds'
 #PipeRead 'echo SetEnv FVWM_STRUT_LEFT $(($[FVWM_ICON_SIZE]+20))'
-#SetEnv FVWM_STRUT_RIGHT 10
-#PipeRead 'echo SetEnv FVWM_STRUT_TOP $(($[FVWM_PANEL_HEIGHT]+10))'
-#SetEnv FVWM_STRUT_BOTTOM 10
+SetEnv FVWM_STRUT_LEFT 10
+PipeRead 'echo SetEnv FVWM_STRUT_RIGHT $(($[FVWM_THUMBNAIL_SIZE]+20))'
+PipeRead 'echo SetEnv FVWM_STRUT_TOP $(($[FVWM_PANEL_HEIGHT]+10))'
+SetEnv FVWM_STRUT_BOTTOM 10
 SetEnv FVWM_FONT 'xft:$[FVWM_FONT_NAME]:size=$[FVWM_FONT_SIZE]:bold:antialias=True'
 
 SetEnv FVWM_CLOSE_BUTTON 2
@@ -80,8 +80,8 @@ Key XF86MonBrightnessUp A N Backlight "-inc 5"
 Key XF86AudioLowerVolume A N Exec exec sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%" 
 Key XF86AudioRaiseVolume A N Exec exec sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"
 
-#Key I WTFS246 4 Thumbnail
-Key Return WTFS246 4 StartReturn
+Key I WTFS246 4 Thumbnail
+Key Up WTFS246 4 StartReturn
 Key Left WTFS246 4 SnapLeft
 Key Right WTFS246 4 SnapRight
 Key V WTFS246 4 VideoWindow
@@ -112,7 +112,7 @@ AddToFunc SetMouseBindings
 + I Mouse 3 T A Menu MenuWindow
 + I Mouse 0 $[FVWM_CLOSE_BUTTON] A Close
 + I Mouse 0 $[FVWM_MAXIMIZE_BUTTON] A Maximize
-+ I Mouse 0 $[FVWM_MINIMIZE_BUTTON] A Iconify
++ I Mouse 0 $[FVWM_MINIMIZE_BUTTON] A Thumbnail
 + I Mouse 1 I A Iconify
 + I Mouse 1 WTFS246 4 FuncFvwmRaiseLowerX Move
 
@@ -131,7 +131,7 @@ BusyCursor Read off
 # Window Styles
 # ===========================================================================
 
-#Style * IconBox $[FVWM_STRUT_LEFT] $[FVWM_STRUT_TOP] -10 -$[FVWM_THUMBNAIL_SIZE], IconFill t r
+Style * IconBox $[FVWM_STRUT_LEFT] $[FVWM_STRUT_TOP] -10 -$[FVWM_THUMBNAIL_SIZE], IconFill t r
 Style * "$[FVWM_FONT]"
 Style * ClickToFocus
 Style * DecorateTransient
@@ -146,7 +146,7 @@ Style * ResizeOpaque
 #Style * PositionPlacement center
 Style * NoIcon
 Style * EWMHMiniIconOverride
-Style * BorderWidth 3
+Style * BorderWidth 2
 Style * HandleWidth 3
 Style * Colorset 1
 Style * HilightColorset 2
@@ -171,7 +171,7 @@ AddToFunc PagerColorsets
 Style "FvwmPager" NoTitle, WindowListSkip, Sticky, !Handles, BorderWidth 1, BorderColorset 8, StaysOnBottom, NeverFocus
 
 DestroyModuleConfig FvwmPager: *
-#PipeRead 'echo "*FvwmPager: Geometry $[FVWM_THUMBNAIL_SIZE]x$(($[FVWM_THUMBNAIL_SIZE]/3*2))-10-10"'
+PipeRead 'echo "*FvwmPager: Geometry $[FVWM_THUMBNAIL_SIZE]x$(($[FVWM_THUMBNAIL_SIZE]/3*2))-10-10"'
 *FvwmPager: Colorset 0 100
 *FvwmPager: Colorset 1 101
 *FvwmPager: Colorset 2 102
@@ -211,11 +211,11 @@ DestroyModuleConfig FvwmIconMan: *
 *FvwmIconMan: Format "%t"
 *FvwmIconMan: Shape true
 
-Style "FvwmPanel" NoTitle, Sticky, WindowListSkip, !Handles, FixedSize, BorderColorset 6, StaysOnBottom, BorderWidth 0, CirculateSkip
+Style "FvwmPanel" NoTitle, Sticky, WindowListSkip, !Handles, FixedSize, BorderColorset 6, StaysOnBottom, BorderWidth 2, CirculateSkip
 
 DestroyFunc SystemTray
 AddToFunc SystemTray
-+ I Exec exec stalonetray --geometry 1x1 --grow-gravity E --icon-gravity W --kludges force_icons_size -i 16 --parent-bg true -d none
++ I Exec exec stalonetray --geometry 1x1 --grow-gravity E --icon-gravity W --kludges force_icons_size -i 16 --parent-bg  true -d none
 
 DestroyModuleConfig FvwmPanel: *
 *FvwmPanel: Geometry $[vp.width]x$[FVWM_PANEL_HEIGHT]+0+0
@@ -229,13 +229,13 @@ DestroyModuleConfig FvwmPanel: *
 *FvwmPanel: (10x1, Id ApplicationsMenuButton, Left, Title "Applications", Action(Mouse 1) `Menu XDGMenu Rectangle +$left+$[FVWM_PANEL_HEIGHT] 0 -0m`)
 *FvwmPanel: (8x1, Id PlacesMenuButton, Left, Title "Places", Action(Mouse 1) `Menu MenuPlaces Rectangle +$left+$[FVWM_PANEL_HEIGHT] 0 -0m`)
 #*FvwmPanel: (80x1, Left, Swallow "FvwmIconMan" "FvwmIconMan")
-*FvwmPanel: (80x1)
-#*FvwmPanel: (25x1, Right, Swallow (NoClose, UseOld) "stalonetray" SystemTray)
-*FvwmPanel: (25x1, Padding 20 2, Swallow "FvwmPager" "FvwmPager 0 3")
+*FvwmPanel: (100x1)
+*FvwmPanel: (25x1, Right, Swallow (NoClose, UseOld) "stalonetray" SystemTray)
+#*FvwmPanel: (25x1, Padding 20 2, Swallow "FvwmPager" "FvwmPager 0 3")
 #*FvwmPanel: (4x1, Swallow "FvwmScript-Wifi" `FvwmScript FvwmScript-Wifi`)
 #*FvwmPanel: (4x1, Swallow "FvwmScript-Battery" `FvwmScript FvwmScript-Battery`)
 #*FvwmPanel: (4x1, Swallow "FvwmScript-Volume" `FvwmScript FvwmScript-Volume`)
-#*FvwmPanel: (14x1, Swallow "FvwmScript-Clock" `FvwmScript FvwmScript-Clock`)
+*FvwmPanel: (14x1, Swallow "FvwmScript-Clock" `FvwmScript FvwmScript-Clock`)
 *FvwmPanel: (2x1)
 
 # ===========================================================================
@@ -245,7 +245,7 @@ DestroyModuleConfig FvwmPanel: *
 DestroyFunc PlaceDock
 AddToFunc PlaceDock
 + I PipeRead 'echo Move +$(($[vp.width]/2-$[w.width]/2))p -0 ewmhiwa'
-Style "FvwmDock" NoTitle, Sticky, WindowListSkip, !Handles, FixedSize, BorderColorset 8, !Borders
+Style "FvwmDock" NoTitle, Sticky, WindowListSkip, !Handles, FixedSize, BorderColorset 8, BorderWidth 2
 
 DestroyFunc FuncDockButton
 AddToFunc FuncDockButton
@@ -264,21 +264,24 @@ DestroyModuleConfig FvwmDock: *
 *FvwmDock: Colorset 8
 *FvwmDock: Frame 0
 *FvwmDock: Padding 3 3
-FuncDockMenu system UberMenu
+#FuncDockMenu system UberMenu
 FuncDockButton terminal $[FVWM_TERMINAL]
 FuncDockButton filer $[FVWM_FILER]
-FuncDockButton editor $[FVWM_EDITOR]
-FuncDockButton browser $[FVWM_BROWSER]
-FuncDockButton gimp gimp 
-FuncDockButton inkscape inkscape
-FuncDockButton office libreoffice
-FuncDockButton calculator xcalc
-FuncDockButton plex ~/bin/plex
+FuncDockButton vim gvim
+FuncDockButton chromium chromium
+FuncDockButton krita krita
 *FvwmDock: (10x2, Padding 5 5, Swallow "FvwmPager" "FvwmPager 0 3")
-*FvwmDock: (4x1, Swallow (NoClose, UseOld) "stalonetray" SystemTray)
-*FvwmDock: (4x1, Swallow "FvwmScript-Clock" `FvwmScript FvwmScript-Clock`)
+#*FvwmDock: (4x1, Swallow (NoClose, UseOld) "stalonetray" SystemTray)
+#*FvwmDock: (4x1, Swallow "FvwmScript-Clock" `FvwmScript FvwmScript-Clock`)
 
 EdgeCommand Bottom Next (FvwmDock) Raise
+
+# ==========================================================================
+# FvwmDash
+# ==========================================================================
+
+
+
 
 # ===========================================================================
 # FvwmEvent
@@ -294,7 +297,7 @@ AddToFunc NewDesk
 + I Exec exec $[FVWM_USERDIR]/bin/notify "Desk: $[desk.n]"
 
 DestroyModuleConfig FvwmEvent: *
-#*FvwmEvent: deiconify ThumbnailRestore
+*FvwmEvent: deiconify ThumbnailRestore
 *FvwmEvent: add_window AddWindow
 
 # ===========================================================================
@@ -314,7 +317,7 @@ DestroyModuleConfig FvwmAnimate: *
 DestroyModuleConfig FvwmScript: *
 *FvwmScript: Path $[FVWM_USERDIR]/scripts
 *FvwmScript: DefaultFont $[FVWM_FONT]
-*FvwmScript: DefaultColorset 8
+*FvwmScript: DefaultColorset 6
 
 # ===========================================================================
 # FvwmForm
@@ -388,19 +391,11 @@ AddToFunc AppIcon
 DestroyFunc GenerateAppIcons
 AddToFunc GenerateAppIcons
 + I AppIcon * application
-+ I AppIcon chromium browser
-+ I AppIcon Firefox browser
-+ I AppIcon gimp gimp
-+ I AppIcon google-chrome browser
-+ I AppIcon gvim editor
-+ I AppIcon inkscape inkscape
-+ I AppIcon Opera browser
++ I AppIcon chromium chromium
++ I AppIcon kitty terminal
++ I AppIcon gvim vim
 + I AppIcon pcmanfm filer
-+ I AppIcon Pysol game
-+ I AppIcon ROX-Filer filer
-+ I AppIcon soffice office
 + I AppIcon xterm terminal
-+ I AppIcon vim editor
 
 Style "GIMP Startup" NoTitle, !Borders
 Style "FvwmButtons" NeverFocus
@@ -419,7 +414,7 @@ MenuStyle * PopupDelay 300
 MenuStyle * ItemFormat "%.4s%.16|%.5i%.16l%.5l%.5r%.5i%2.3>%1|"
 MenuStyle * TrianglesUseFore
 MenuStyle * VerticalItemSpacing 5 5
-MenuStyle * BorderWidth 0
+MenuStyle * BorderWidth 1
 
 # ==========================================================================
 # fvwm-menu-directory
@@ -438,7 +433,7 @@ AddToFunc FuncFvwmMenuDirectory
 # XDGMenu
 # ==========================================================================
 
-PipeRead 'fvwm-menu-desktop --desktop lxde --without-titles --include-items none'
+PipeRead 'fvwm-menu-desktop --desktop arch --without-titles --include-items none'
 
 # ==========================================================================
 # Background menu
@@ -554,7 +549,7 @@ AddToMenu MenuPlaces
 + MissingSubMenuFunction FuncFvwmMenuDirectory
 + "$[HOME]" Popup $[HOME]
 + "$[HOME]/Downloads" Popup $[HOME]/Downloads
-+ "$[HOME]/MEGA" Popup $[HOME]/MEGA
++ "$[HOME]/pCloudDrive" Popup $[HOME]/pCloudDrive
 
 DestroyMenu MenuSettings
 AddToMenu MenuSettings
@@ -598,7 +593,7 @@ AddToMenu MenuWindow
 + "Send To" Popup MenuSendTo
 + "Snap" Popup MenuSnap
 + "Identify" Module FvwmIdent
-#+ "Thumbnail" Thumbnail
++ "Thumbnail" Thumbnail
 + "Maximize" Maximize
 + "Sticky" Stick
 + "Close" Close
@@ -682,26 +677,28 @@ AddToFunc Composite
 
 DestroyFunc StartFunction
 AddToFunc StartFunction
-+ I Test (Init) Exec exec xscreensaver -no-splash &
-+ I Test (Init) Exec exec dunst &
+#+ I Test (Init) Exec exec xscreensaver -no-splash &
+#+ I Test (Init) Exec exec dunst &
 + I Test (Init) Exec exec nm-applet &
 + I Test (Init) Exec exec cbatticon -n &
++ I Test (Init) Exec exec pulseaudio -D
 + I Test (Init) Exec exec pasystray -a &
++ I Test (Init) Exec exec pcloud &
 + I Test (Init) Exec exec pulseaudio --start
 + I Test (Init) PipeRead 'rm $[FVWM_USERDIR]/tmp/*'
 # won't show up in tray unless I delay it a bit
-+ I Test (Init) Schedule 5000 Exec exec megasync
+#+ I Test (Init) Schedule 5000 Exec exec megasync
 + I Test (Restart) All (Iconic) ThumbnailAgain
 + I Exec exec xrdb ~/.Xresources
 + I Read $[FVWM_USERDIR]/decor/current/theme.fvwm2rc
 + I Function SetMouseBindings
-+ I Function Composite
+#+ I Function Composite
 + I Function GenerateAppIcons
 + I Function PagerColorsets
 + I Module FvwmAnimate
 + I Module FvwmBacker
 + I Module FvwmCommandS
 + I Module FvwmButtons FvwmDock
-#+ I Module FvwmButtons FvwmPanel
++ I Module FvwmButtons FvwmPanel
 + I Module FvwmEvent
 

@@ -1,6 +1,0 @@
-#!/bin/sh
-#line=`nmcli dev wifi | grep oogway`
-line=`cat /proc/net/wireless | grep wlp3s0`
-IFS=' ' read -r -a fields <<< "$line"
-signal=${fields[2]/./ }
-echo $signal

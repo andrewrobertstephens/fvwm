@@ -1,0 +1,33 @@
+#!/bin/sh
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+if [ $FVWM_PANEL_DARK == true ]; then
+    EXTRA=-white
+else
+    EXTRA=
+fi
+
+size=$((${FVWM_PANEL_HEIGHT}-4))
+
+SIZE=${FVWM_PANEL_HEIGHT}x${FVWM_PANEL_HEIGHT}
+
+adapter=`$DIR/adapter`
+
+if [ $adapter == on-line ]; then
+    icon=$FVWM_USERDIR/panel/charging${EXTRA}.svg:$SIZE
+else
+    level=`$DIR/battery_level`
+    if [ $level -gt 75 ]; then
+        icon=$FVWM_USERDIR/panel/full${EXTRA}.svg:$SIZE
+    elif [ $level -gt 50 ]; then
+        icon=$FVWM_USERDIR/panel/75${EXTRA}.svg:$SIZE 
+    elif [ $level -gt 25 ]; then
+        icon=$FVWM_USERDIR/panel/50${EXTRA}.svg:$SIZE 
+    else
+        icon=$FVWM_USERDIR/panel/25${EXTRA}.svg:$SIZE 
+    fi
+fi
+
+echo $icon
+

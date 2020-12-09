@@ -1,5 +1,0 @@
-#!/bin/sh
-string=`acpi -a`
-IFS=', ' read -r -a array <<< "$string"
-echo ${array[2]}
-

@@ -1,0 +1,28 @@
+#!/bin/sh
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+if [ $FVWM_PANEL_DARK == true ]; then
+    EXTRA=-white
+else
+    EXTRA=
+fi
+
+size=$((${FVWM_PANEL_HEIGHT}-4))
+
+SIZE=${size}x${size}
+
+signal=`$FVWM_USERDIR/bin/wifi_signal`
+
+if [ $signal -gt 75 ]; then
+    icon=wifi-full
+elif [ $signal -gt 50 ]; then
+    icon=wifi-66
+elif [ $signal -gt 25 ]; then
+    icon=wifi-33
+else
+    icon=wifi-0
+fi
+
+echo $FVWM_USERDIR/panel/${icon}${EXTRA}.svg:${SIZE}
+

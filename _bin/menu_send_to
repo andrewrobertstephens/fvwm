@@ -1,0 +1,6 @@
+#!/bin/sh
+echo DestroyMenu MenuSendTo
+echo AddToMenu MenuSendTo
+for i in `seq 0 3`; do
+    echo + \"Desktop $i\" MoveToDesk 0 $i
+done
