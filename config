@@ -4,7 +4,7 @@
 # Environment Variable
 # ===========================================================================
 
-SetEnv FVWM_TERMINAL kitty
+SetEnv FVWM_TERMINAL lxterminal
 SetEnv FVWM_EDITOR gvim
 SetEnv FVWM_BROWSER chromium
 SetEnv FVWM_FILER pcmanfm
@@ -21,7 +21,8 @@ SetEnv FVWM_THUMBNAIL_SIZE 128
 SetEnv FVWM_BACKGROUNDS '$[HOME]/.backgrounds'
 #PipeRead 'echo SetEnv FVWM_STRUT_LEFT $(($[FVWM_ICON_SIZE]+20))'
 SetEnv FVWM_STRUT_LEFT 10
-PipeRead 'echo SetEnv FVWM_STRUT_RIGHT $(($[FVWM_THUMBNAIL_SIZE]+20))'
+#PipeRead 'echo SetEnv FVWM_STRUT_RIGHT $(($[FVWM_THUMBNAIL_SIZE]+20))'
+SetEnv FVWM_STRUT_RIGHT 10
 PipeRead 'echo SetEnv FVWM_STRUT_TOP $(($[FVWM_PANEL_HEIGHT]+10))'
 SetEnv FVWM_STRUT_BOTTOM 10
 SetEnv FVWM_FONT 'xft:$[FVWM_FONT_NAME]:size=$[FVWM_FONT_SIZE]:bold:antialias=True'
@@ -88,16 +89,23 @@ Key V WTFS246 4 VideoWindow
 Key Left A MC GotoDesk -1 0 0 3
 Key Right A MC GoToDesk +1 0 0 3
 Key M A MC Menu MenuMan Root c c
-Key R A MC Exec exec gmrun
-Key T A MC Exec exec $[FVWM_TERMINAL]
-Key E A MC Exec exec $[FVWM_EDITOR]
-Key F A MC Exec exec $[FVWM_FILER]
-Key B A MC Exec exec $[FVWM_BROWSER]
-#Key C A MC Exec exec gnome-calculator
-Key S A MC Exec exec xterm -fg darkblue -bg white -e ssh 192.168.1.30
+Key R A 4 Exec exec gmrun
+Key T A 4 Exec exec $[FVWM_TERMINAL]
+Key E A 4 Exec exec $[FVWM_EDITOR]
+Key F A 4 Exec exec $[FVWM_FILER]
+Key B A 4 Exec exec $[FVWM_BROWSER]
+Key C A 4 Exec exec $[FVWM_EDITOR] $[FVWM_USERDIR]/config
+Key L A 4 Exec exec $[FVWM_TERMINAL] -e tail -f $[FVWM_USERDIR]/fvwm-errors
 Key Delete A MC Exec exec lxtask
 Key BackSpace A MC Restart
 Key Return A MC Module FvwmConsole
+
+DestroyFunc Screenshot
+AddToFunc Screenshot
++ I Exec exec scrot ~/Pictures/%Y-%m-%d-%T-screenshot.png
++ I Exec exec $[FVWM_FILER] ~/Pictures
+
+Key Print A N Screenshot
 
 # ===========================================================================
 # Mouse bindings
@@ -140,11 +148,11 @@ Style * ResizeOpaque
 #Style * NoIconTitle
 #Style * !IconTitle
 #Style * IconTitleColorset 2
-#Style * IconTitleRelief 0
+Style * IconTitleRelief 0
 #Style * IconBackgroundColorset 1
 #Style * IconBackgroundRelief 1
 #Style * PositionPlacement center
-Style * NoIcon
+#Style * NoIcon
 Style * EWMHMiniIconOverride
 Style * BorderWidth 2
 Style * HandleWidth 3
@@ -171,7 +179,7 @@ AddToFunc PagerColorsets
 Style "FvwmPager" NoTitle, WindowListSkip, Sticky, !Handles, BorderWidth 1, BorderColorset 8, StaysOnBottom, NeverFocus
 
 DestroyModuleConfig FvwmPager: *
-PipeRead 'echo "*FvwmPager: Geometry $[FVWM_THUMBNAIL_SIZE]x$(($[FVWM_THUMBNAIL_SIZE]/3*2))-10-10"'
+#PipeRead 'echo "*FvwmPager: Geometry $[FVWM_THUMBNAIL_SIZE]x$(($[FVWM_THUMBNAIL_SIZE]/3*2))-10-10"'
 *FvwmPager: Colorset 0 100
 *FvwmPager: Colorset 1 101
 *FvwmPager: Colorset 2 102
@@ -225,7 +233,7 @@ DestroyModuleConfig FvwmPanel: *
 *FvwmPanel: Frame 0
 *FvwmPanel: Padding 0 0
 *FvwmPanel: (2x1) 
-*FvwmPanel: (4x1, Id SystemMenuButton Left, Icon '$[FVWM_USERDIR]/panel/system.svg:20x20', Action(Mouse 1) `Menu MenuSystem Rectangle +$left+$[FVWM_PANEL_HEIGHT] 0 -0m`)
+*FvwmPanel: (9x1, Id SystemMenuButton Left, Icon '$[FVWM_USERDIR]/system.svg:57x20', Action(Mouse 1) `Menu MenuSystem Rectangle +$left+$[FVWM_PANEL_HEIGHT] 0 -0m`)
 *FvwmPanel: (10x1, Id ApplicationsMenuButton, Left, Title "Applications", Action(Mouse 1) `Menu XDGMenu Rectangle +$left+$[FVWM_PANEL_HEIGHT] 0 -0m`)
 *FvwmPanel: (8x1, Id PlacesMenuButton, Left, Title "Places", Action(Mouse 1) `Menu MenuPlaces Rectangle +$left+$[FVWM_PANEL_HEIGHT] 0 -0m`)
 #*FvwmPanel: (80x1, Left, Swallow "FvwmIconMan" "FvwmIconMan")
@@ -291,11 +299,6 @@ DestroyFunc AddWindow
 AddToFunc AddWindow
 + I ThisWindow (FvwmDock) PlaceDock
 
-DestroyFunc NewDesk
-AddToFunc NewDesk
-+ I SetEnv FVWM_DESK_N $[desk.n]
-+ I Exec exec $[FVWM_USERDIR]/bin/notify "Desk: $[desk.n]"
-
 DestroyModuleConfig FvwmEvent: *
 *FvwmEvent: deiconify ThumbnailRestore
 *FvwmEvent: add_window AddWindow
@@ -305,8 +308,8 @@ DestroyModuleConfig FvwmEvent: *
 # ===========================================================================
 
 DestroyModuleConfig FvwmAnimate: *
-*FvwmAnimate: Effect Frame
-*FvwmAnimate: Iterations 200
+*FvwmAnimate: Effect Flip
+*FvwmAnimate: Iterations 300
 *FvwmAnimate: Width 4
 *FvwmAnimate: Color White
 
@@ -392,9 +395,13 @@ DestroyFunc GenerateAppIcons
 AddToFunc GenerateAppIcons
 + I AppIcon * application
 + I AppIcon chromium chromium
-+ I AppIcon kitty terminal
 + I AppIcon gvim vim
++ I AppIcon kitty terminal
++ I AppIcon krita krita
++ I AppIcon lxterminal terminal
 + I AppIcon pcmanfm filer
++ I AppIcon sakura terminal
++ I AppIcon Steam steam
 + I AppIcon xterm terminal
 
 Style "GIMP Startup" NoTitle, !Borders
@@ -553,8 +560,9 @@ AddToMenu MenuPlaces
 
 DestroyMenu MenuSettings
 AddToMenu MenuSettings
-+ "Packages" Exec exec $[FVWM_TERMINAL] -e yaourt-gui
-+ "Xresources" Exec exec $[FVWM_EDITOR] ~/.Xresources
++ "Composite Restart" Function CompositeRestart
++ "Pacman Sync/Upgrade" Exec exec $[FVWM_TERMINAL] -e sudo pacman -Syu
++ "PulseAudio Restart" Function PulseAudioRestart
 + "GTK Settings" Exec exec lxappearance
 + "Screen Saver" Exec exec xscreensaver-demo
 
@@ -579,6 +587,10 @@ AddToMenu MenuLayer
 DestroyMenu MenuSendTo
 AddToMenu MenuSendTo
 + DynamicPopupAction PipeRead '$[FVWM_USERDIR]/bin/menu_send_to'
++ "Desktop 0" MoveToDesk 0 0
++ "Desktop 1" MoveToDesk 0 1
++ "Desktop 2" MoveToDesk 0 2
++ "Desktop 3" MoveToDesk 0 4
 
 DestroyMenu MenuSnap
 AddToMenu MenuSnap
@@ -645,6 +657,14 @@ AddToFunc ThumbnailRestore
 # Functions (General)
 # ===========================================================================
 
+DestroyFunc PulseAudioRestart
+AddToFunc PulseAudioRestart
++ I PipeRead 'pulseaudio --kill; pulseaudio -D'
+
+DestroyFunc CompositeRestart
+AddToFunc CompositeRestart
++ I PipeRead 'killall picom; picom -c -i 1 -e 1 -b'
+
 DestroyFunc SnapLeft
 AddToFunc SnapLeft
 + I ResizeMoveMaximize 49wa 95wa +0 +0
@@ -666,33 +686,22 @@ AddToFunc SendToPage
 + I MovetoPage $0 $1
 + I WarpToWindow
 
-DestroyFunc Composite
-AddToFunc Composite
-+ I PipeRead 'killall compton'
-+ I Exec exec compton
-
 # ===========================================================================
 # Start Function
 # ===========================================================================
 
 DestroyFunc StartFunction
 AddToFunc StartFunction
-#+ I Test (Init) Exec exec xscreensaver -no-splash &
-#+ I Test (Init) Exec exec dunst &
 + I Test (Init) Exec exec nm-applet &
 + I Test (Init) Exec exec cbatticon -n &
 + I Test (Init) Exec exec pulseaudio -D
 + I Test (Init) Exec exec pasystray -a &
 + I Test (Init) Exec exec pcloud &
-+ I Test (Init) Exec exec pulseaudio --start
 + I Test (Init) PipeRead 'rm $[FVWM_USERDIR]/tmp/*'
-# won't show up in tray unless I delay it a bit
-#+ I Test (Init) Schedule 5000 Exec exec megasync
 + I Test (Restart) All (Iconic) ThumbnailAgain
-+ I Exec exec xrdb ~/.Xresources
 + I Read $[FVWM_USERDIR]/decor/current/theme.fvwm2rc
++ I Function CompositeRestart
 + I Function SetMouseBindings
-#+ I Function Composite
 + I Function GenerateAppIcons
 + I Function PagerColorsets
 + I Module FvwmAnimate
