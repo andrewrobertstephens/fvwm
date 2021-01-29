@@ -1,0 +1,24 @@
+# ===============
+# FvwmForm module
+# ===============
+
+Style "FvwmForm-*" NoTitle
+
+DestroyModuleConfig FvwmForm-Quit: *
+*FvwmForm-Quit: Colorset 3
+*FvwmForm-Quit: ItemColorset 4
+*FvwmForm-Quit: Font $[FVWM_FONT]
+*FvwmForm-Quit: ButtonFont $[FVWM_FONT]
+*FvwmForm-Quit: TimeoutFont $[FVWM_FONT]
+*FvwmForm-Quit: GrabServer
+#*FvwmForm-Quit: WarpPointer
+*FvwmForm-Quit: Command Beep
+*FvwmForm-Quit: Line center
+*FvwmForm-Quit: Text "Do you really want to logout?"
+*FvwmForm-Quit: Line expand
+*FvwmForm-Quit: Button quit "Logout" ^M
+*FvwmForm-Quit: Command Quit
+*FvwmForm-Quit: Button restart "Restart" ^R
+*FvwmForm-Quit: Command Restart
+*FvwmForm-Quit: Button quit "Cancel" ^[
+*FvwmForm-Quit: Command Nop

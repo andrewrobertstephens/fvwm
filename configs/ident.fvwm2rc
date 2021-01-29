@@ -1,0 +1,7 @@
+# ================
+# FvwmIdent module
+# ================
+
+DestroyModuleConfig FvwmIdent: *
+*FvwmIdent: Colorset 3
+*FvwmIdent: Font $[FVWM_FONT]

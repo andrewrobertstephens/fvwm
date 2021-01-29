@@ -1,0 +1,10 @@
+# ========================================
+# FvwmBacker module
+# - different backgrounds for each desktop
+# ========================================
+
+DestroyModuleConfig FvwmBacker: *
+*FvwmBacker: Command (Desk 0) Exec fvwm-root -r $[FVWM_USERDIR]/background0.png
+*FvwmBacker: Command (Desk 1) Exec fvwm-root -r $[FVWM_USERDIR]/background1.png
+*FvwmBacker: Command (Desk 2) Exec fvwm-root -r $[FVWM_USERDIR]/background2.png
+*FvwmBacker: Command (Desk 3) Exec fvwm-root -r $[FVWM_USERDIR]/background3.png

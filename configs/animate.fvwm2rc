@@ -1,0 +1,9 @@
+# ==================
+# FvwmAnimate module
+# ==================
+
+DestroyModuleConfig FvwmAnimate: *
+*FvwmAnimate: Effect Flip
+*FvwmAnimate: Iterations 300
+*FvwmAnimate: Width 4
+*FvwmAnimate: Color White

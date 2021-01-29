@@ -40,3 +40,46 @@ VolumeGet
 VolumeGet
 CompositeRestart
 CompositeRestart
+MoveAndGoToDesk 1
+MoveAndGoToDesk 1
+MoveAndGoToDesk 1
+FvwmForm FvwmForm-ManPage
+FvwmForm FvwmForm-QuitVerify
+FvwmScript FvwmScript-ScreenDump
+FvwmScript FvwmScript-ScreenDump
+ReasonableSize
+ReasonableSize
+ReasonableSize
+ReasonableSize
+ReasonableSize
+ReasonableSize
+ReasonableSize
+ReasonableSize
+ReasonableSize
+ReasonableSize
+ReasonableSize
+ReasonableSize
+Screenshot
+Exec exec echo hello
+Exec exec pcmanfm
+FuncNotify hello
+FuncNotify hello
+SendToModule FB-Dock ChangeButton lxterminal Icon lxterminal:64x64
+SendToModule FB-Dock ChangeButton lxterminal Icon lxterminal:128x128
+SendToModule FB-Dock ChangeButton lxterminal Title lxterminal
+SendToModule FB-Dock ChangeButton lxterminal Icon lxterminal:16x16
+SendToModule FB-Dock ChangeButton lxterminal Icon lxterminal:32x32
+SendToModule FB-Dock ChangeButton pcmanfm Icon lxterminal:32x32
+SendToModule FB-Dock ChangeButton pcmanfm Icon pcmanfm:32x32
+SendToModule FB-Dock ChangeButton pcmanfm Title pcmanfm
+exec exec echo 'hello'
+exec exec xmessage 'hello'
+exec exec xmessage $FVWM_FILER
+exec exec xmessage $FVWM_COMPOSITE
+FvwmForm FF-Notify
+FvwmForm FF-Notify
+FvwmForm FF-Notify
+FvwmIdent
+FvwmForm FF-Notify
+FvwmIdent
+GoToDessk 0 0 0 4

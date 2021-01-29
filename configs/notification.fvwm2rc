@@ -1,0 +1,29 @@
+#Style "FvwmForm-*" NoTitle
+
+DestroyModuleConfig FF-Notify: *
+*FF-Notify: Colorset 3
+*FF-Notify: ItemColorset 4
+*FF-Notify: Font $[FVWM_FONT]
+*FF-Notify: ButtonFont $[FVWM_FONT]
+*FF-Notify: TimeoutFont $[FVWM_FONT]
+*FF-Notify: GrabServer
+#*FF-Notify: WarpPointer
+*FF-Notify: Command Beep
+*FF-Notify: Line center
+*FF-Notify: Text "Do you really want to logout?"
+*FF-Notify: Line expand
+*FF-Notify: Button quit "Logout" ^M
+*FF-Notify: Command Quit
+*FF-Notify: Button restart "Restart" ^R
+*FF-Notify: Command Restart
+*FF-Notify: Button quit "Cancel" ^[
+*FF-Notify: Command Nop
+
+DestroyFunc FuncNotificationDaemon
+AddToFunc FuncNotificationDaemon
++ I Exec exec dunst
+
+DestroyFunc FuncNotify
+AddToFunc FuncNotify
++ I Exec exec dunstctl close-all
++ I Exec exec notify-send "$0"

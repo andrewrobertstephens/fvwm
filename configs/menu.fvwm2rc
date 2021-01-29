@@ -1,0 +1,174 @@
+# =========================
+# menu style and definition
+# =========================
+
+MenuStyle * MenuColorset 3
+MenuStyle * ActiveColorset 4
+MenuStyle * Hilight3DOff
+MenuStyle * HilightBack
+MenuStyle * PopupOffset 0 100
+MenuStyle * TitleUnderlines2, SeparatorsLong, TrianglesSolid
+MenuStyle * PopupDelay 300
+MenuStyle * ItemFormat "%.4s%.16|%.5i%.16l%.5l%.5r%.5i%2.3>%1|"
+MenuStyle * TrianglesUseFore
+MenuStyle * VerticalItemSpacing 5 5
+MenuStyle * BorderWidth 1
+
+PipeRead 'fvwm-menu-desktop --desktop arch --without-titles --include-items none'
+
+DestroyFunc FuncFvwmMenuDirectory
+AddToFunc FuncFvwmMenuDirectory
++ I PipeRead 'case "$0" in \
+                $[HOME]/Music*) exec_title="$[FVWM_VIDEO] *" exec_file="$[FVWM_VIDEO]";; \
+                $[FVWM_USERDIR]*) exec_title="$[FVWM_FILER]" exec_file="$[FVWM_EDITOR]";; \
+                *) exec_title=$[FVWM_FILER] exec_file=$[FVWM_FILER];; \
+              esac; \
+              fvwm-menu-directory --dir="$0" --exec-title="^${exec_title}" --exec-file="^${exec_file}" --links'
+
+DestroyMenu MenuMan
+AddToMenu MenuMan
++ "fvwm" FuncManPage fvwm
++ "FvwmAnimate" FuncManPage FvwmAnimate
++ "FvwmAuto" FuncManPage FvwmAuto
++ "FvwmBacker" FuncManPage FvwmBacker
++ "FvwmBanner" FuncManPage FvwmBanner
++ "FvwmButtons" FuncManPage FvwmButtons
++ "FvwmCommand" FuncManPage FvwmCommand
++ "FvwmConsole" FuncManPage FvwmConsole
++ "FvwmEvent" FuncManPage FvwmEvent
++ "FvwmForm" FuncManPage FvwmForm
++ "FvwmIconMan" FuncManPage FvwmIconMan
++ "FvwmIdent" FuncManPage FvwmIdent
++ "FvwmPager" FuncManPage FvwmPager
++ "FvwmRearrange" FuncManPage FvwmRearrange
++ "FvwmScript" FuncManPage FvwmScript
++ "fvwm-menu-desktop" FuncManPage fvwm-menu-desktop
++ "fvwm-menu-directory" FuncManPage fvwm-menu-directory
++ "fvwm-root" FuncManPage fvwm-root
+
+DestroyMenu MenuBackrounds
+AddToMenu MenuBackgrounds
++ DynamicPopupAction PipeRead 'mkdir -p $[FVWM_BACKGROUNDS]/.thumbs; \
+                               echo DestroyMenu recreate MenuBackgrounds; \
+                               echo AddToMenu MenuBackgrounds; \
+                               for i in $[FVWM_BACKGROUNDS]/*; do \
+                                 shortname=`basename $i`; \
+                                 if [ ! -f $[FVWM_BACKGROUNDS]/.thumbs/${shortname}.png ]; then \
+                                   convert -resize 64x64 "$i" "$[FVWM_BACKGROUNDS]/.thumbs/${shortname}.png"; \
+                                 fi; \
+                                 echo + \\"${shortname}\\%$[FVWM_BACKGROUNDS]/.thumbs/${shortname}.png\\%\\" FuncBackgroundSet "$i"; \
+                               done'
+
+DestroyMenu MenuDecor
+AddToMenu MenuDecor
++ DynamicPopupAction PipeRead 'echo DestroyMenu MenuDecor; \
+                               echo AddToMenu MenuDecor; \
+                               for i in $[FVWM_USERDIR]/decor/*; do \
+                                   shortname=`basename $i`; \
+                                   if [ "$shortname" != "current" ]; then \
+                                       echo + \"$shortname\" FuncChangeDecor $i; \
+                                   fi; \
+                               done'
+
+DestroyMenu MenuIcons
+AddToMenu MenuIcons
++ DynamicPopupAction PipeRead 'echo DestroyMenu recreate MenuIcons; \
+                               echo AddToMenu MenuIcons; \
+                               for i in $FVWM_USERDIR/icons/*; do \
+                                   shortname=`basename $i`; \
+                                   if [ "$shortname" != "current" ]; then \
+                                       echo + \"$shortname\" FuncChangeIcons $i; \
+                                   fi; \
+                               done'
+
+DestroyMenu MenuFvwm
+AddToMenu MenuFvwm
++ MissingSubMenuFunction FuncFvwmMenuDirectory
++ "FVWM_USERDIR" Popup $[FVWM_USERDIR]
++ "Background" Popup MenuBackgrounds
++ "Decor" Popup MenuDecor
++ "Icons" Popup MenuIcons
++ "Man" Popup MenuMan
++ "fvwm-errors" Exec exec $[FVWM_TERMINAL] -e tail -f $[FVWM_USERDIR]/fvwm-errors
+
+DestroyMenu MenuPlaces
+AddToMenu MenuPlaces
++ MissingSubMenuFunction FuncFvwmMenuDirectory
++ "$[HOME]" Popup $[HOME]
++ "$[HOME]/Applications" Popup $[HOME]/Applications
++ "$[HOME]/Documents" Popup $[HOME]/Documents
++ "$[HOME]/Downloads" Popup $[HOME]/Downloads
+
+DestroyMenu MenuComposite
+AddToMenu MenuComposite
++ "Composite On" Function FuncCompositeSet on
++ "Composite Off" Function FuncCompositeSet off
+
+DestroyMenu MenuPacman
+AddToMenu MenuPacman
++ "Update" Exec exec $[FVWM_TERMINAL] -e sudo pacman -Sy
++ "Upgrade" Exec exec $[FVWM_TERMINAL] -e sudo pacman -Su
++ "Update/Upgrade" Exec exec $[FVWM_TERMINAL] -e sudo pacman -Syu
++ "Remove Orphans" Exec exec $[FVWM_TERMINAL] -e sudo pacman -R $(pacman -Qdtq)
++ "Clear Cache" Exec exec $[FVWM_TERMINAL] -e sudo pacman -Sc
+ 
+DestroyMenu MenuSettings
+AddToMenu MenuSettings
++ "Composite" Popup MenuComposite
++ "Pacman" Popup MenuPacman
++ "PulseAudio Restart" Function PulseAudioRestart
++ "GTK Settings" Exec exec lxappearance
++ "Screen Saver" Exec exec xscreensaver-demo
+
+DestroyMenu MenuSystem
+AddToMenu MenuSystem
++ "Fvwm" Popup MenuFvwm
++ "Settings" Popup MenuSettings
++ "Kill Window (XKill)" Exec exec xkill
++ "Restart (Fvwm)" Restart
++ "Quit (Fvwm)" FvwmForm FvwmForm-Quit
+
+DestroyMenu MenuLayer
+AddToMenu MenuLayer
++ "Top"		Layer 0 6
++ "Default"	Layer 0 4
++ "Bottom"	Layer 0 2
+
+DestroyMenu MenuSendTo
+AddToMenu MenuSendTo
++ DynamicPopupAction PipeRead '$[FVWM_USERDIR]/bin/menu_send_to'
++ "Desktop 0" MoveToDesk 0 0
++ "Desktop 1" MoveToDesk 0 1
++ "Desktop 2" MoveToDesk 0 2
++ "Desktop 3" MoveToDesk 0 3
+
+DestroyMenu MenuSnap
+AddToMenu MenuSnap
++ "Up" SnapUp
++ "Left" SnapLeft
++ "Right" SnapRight
++ "Down" SnapDown
+
+DestroyMenu MenuWindow
+AddToMenu MenuWindow
++ "Layer" Popup MenuLayer
++ "Send To" Popup MenuSendTo
++ "Snap" Popup MenuSnap
++ "Identify" Module FvwmIdent
+#+ "Thumbnail" Thumbnail
++ "Iconify" Iconify
++ "Maximize" Maximize
++ "Sticky" Stick
++ "Close" Close
++ "Destroy" Destroy
+
+DestroyMenu UberMenu
+AddToMenu UberMenu
++ "Applications" Popup XDGMenu
++ "Places" Popup MenuPlaces
++ "Settings" Popup MenuSettings
++ "Fvwm" Popup MenuFvwm
++ "" Nop
++ "Kill Window (XKill)" Exec exec xkill
++ "Restart (Fvwm)" Restart
++ "Quit (Fvwm)" FvwmForm FvwmForm-Quit

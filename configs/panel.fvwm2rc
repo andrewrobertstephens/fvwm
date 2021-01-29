@@ -1,0 +1,30 @@
+# =======================
+# FvwmButtons based panel
+# =======================
+
+DestroyFunc FuncSystemTray
+AddToFunc FuncSystemTray
++ I Exec exec stalonetray --geometry 1x1 --grow-gravity E --icon-gravity W --kludges force_icons_size -i 16 --parent-bg  true -d none
+
+Style "FB-Panel" NoTitle, Sticky, WindowListSkip, !Handles, FixedSize, BorderColorset 6, StaysOnBottom, BorderWidth 2, CirculateSkip
+
+DestroyModuleConfig FB-Panel: *
+*FB-Panel: Geometry $[vp.width]x$[FVWM_PANEL_HEIGHT]+0+0
+*FB-Panel: Font "$[FVWM_FONT]"
+*FB-Panel: Colorset 6
+*FB-Panel: Rows 1
+*FB-Panel: Frame 0
+*FB-Panel: Padding 0 0
+*FB-Panel: (2x1) 
+*FB-Panel: (9x1, Id SystemMenuButton Left, Icon '$[FVWM_USERDIR]/system.svg:57x20', Action(Mouse 1) `Menu MenuSystem Rectangle +$left+$[FVWM_PANEL_HEIGHT] 0 -0m`)
+*FB-Panel: (10x1, Id ApplicationsMenuButton, Left, Title "Applications", Action(Mouse 1) `Menu XDGMenu Rectangle +$left+$[FVWM_PANEL_HEIGHT] 0 -0m`)
+*FB-Panel: (8x1, Id PlacesMenuButton, Left, Title "Places", Action(Mouse 1) `Menu MenuPlaces Rectangle +$left+$[FVWM_PANEL_HEIGHT] 0 -0m`)
+#*FB-Panel: (80x1, Left, Swallow "FvwmIconMan" "FvwmIconMan")
+*FB-Panel: (70x1)
+*FB-Panel: (25x1, Right, Swallow (NoClose, UseOld) "stalonetray" FuncSystemTray)
+*FB-Panel: (25x1, Padding 20 2, Swallow "FvwmPager" "FvwmPager 0 3")
+#*FB-Panel: (4x1, Swallow "FvwmScript-Wifi" `FvwmScript FvwmScript-Wifi`)
+#*FB-Panel: (4x1, Swallow "FvwmScript-Battery" `FvwmScript FvwmScript-Battery`)
+#*FB-Panel: (4x1, Swallow "FvwmScript-Volume" `FvwmScript FvwmScript-Volume`)
+*FB-Panel: (14x1, Swallow "FvwmScript-Clock" `FvwmScript FvwmScript-Clock`)
+*FB-Panel: (2x1)

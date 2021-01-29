@@ -1,0 +1,14 @@
+# ==============
+# mouse bindings
+# ==============
+
+Mouse 0 R A Nop
+Mouse 1 R A Nop
+Mouse 2 R A Nop
+Mouse 3 R A Nop
+Mouse 3 T A Menu MenuWindow
+Mouse 0 $[FVWM_CLOSE_BUTTON] A Close
+Mouse 0 $[FVWM_MAXIMIZE_BUTTON] A Maximize
+Mouse 0 $[FVWM_MINIMIZE_BUTTON] A Iconify
+Mouse 1 I A Iconify
+Mouse 1 WTFS246 4 FuncFvwmRaiseLowerX Move

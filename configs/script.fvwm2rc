@@ -1,0 +1,8 @@
+# ===========================
+# basic design of FvwmScripts
+# ===========================
+
+DestroyModuleConfig FvwmScript: *
+*FvwmScript: Path $[FVWM_USERDIR]/scripts
+*FvwmScript: DefaultFont $[FVWM_FONT]
+*FvwmScript: DefaultColorset 6

@@ -1,0 +1,29 @@
+# ======================================
+# Create thumbnails for iconified window
+# ======================================
+
+DestroyFunc FuncThumbnail
+AddToFunc FuncThumbnail
++ I Raise
++ I PipeRead 'twidth=$[FVWM_THUMBNAIL_SIZE]; \
+              theight=$(($[FVWM_THUMBNAIL_SIZE]/3*2)); \
+              isize=$(($[FVWM_THUMBNAIL_SIZE]/3)); \
+              rsvg-convert -w $[FVWM_ICON_SIZE] -h $[FVWM_ICON_SIZE] $[w.MiniIconFile] > $[FVWM_USERDIR]/tmp/appicon.png; \
+              import -window $[w.id] -thumbnail ${twidth}!x${theight}! $[FVWM_USERDIR]/tmp/$[w.id].png; \
+              composite -geometry +5+5 $[FVWM_USERDIR]/tmp/appicon.png $[FVWM_USERDIR]/tmp/$[w.id].png $[FVWM_USERDIR]/tmp/$[w.id].png'
++ I WindowStyle IconOverride, Icon $[FVWM_USERDIR]/tmp/$[w.id].png
++ I Iconify
+
+DestroyFunc FuncThumbnailAgain
+AddToFunc FuncThumbnailAgain
++ I Iconify False
++ I Thumbnail
+
+DestroyFunc FuncThumbnailRestore
+AddToFunc FuncThumbnailRestore
++ I DestroyWindowStyle $[w.id]
++ I All (Iconic, CurrentPage) PlaceAgain Icon
+
+DestroyModuleConfig FE-Thumbnail: *
+*FE-Thumbnail: deiconify FuncThumbnailRestore
+

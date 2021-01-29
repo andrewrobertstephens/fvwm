@@ -1,0 +1,15 @@
+# ========================
+# manage compositing stuff
+# ========================
+
+DestroyFunc FuncComposite
+AddToFunc FuncComposite
++ I FuncOptionGet FVWM_COMPOSITE
++ I PipeRead 'killall picom'
++ I Test (EnvMatch FVWM_COMPOSITE on) PipeRead 'picom -c -i 1 -e 1 -b -m 1'
+
+DestroyFunc FuncCompositeSet
+AddToFunc FuncCompositeSet
++ I FuncOptionSet FVWM_COMPOSITE "$0"
++ I Restart
+

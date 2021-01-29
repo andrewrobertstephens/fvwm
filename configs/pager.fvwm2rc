@@ -1,0 +1,38 @@
+# =======================
+# FvwmPager configuration
+# =======================
+
+DestroyFunc PagerColorsets
+AddToFunc PagerColorsets
++ I Colorset 100 Pixmap $[FVWM_USERDIR]/pager/background0.png
++ I Colorset 101 Pixmap $[FVWM_USERDIR]/pager/background1.png
++ I Colorset 102 Pixmap $[FVWM_USERDIR]/pager/background2.png
++ I Colorset 103 Pixmap $[FVWM_USERDIR]/pager/background3.png
++ I Colorset 110 Pixmap $[FVWM_USERDIR]/background0.png
++ I Colorset 111 Pixmap $[FVWM_USERDIR]/background1.png
++ I Colorset 112 Pixmap $[FVWM_USERDIR]/background2.png
++ I Colorset 113 Pixmap $[FVWM_USERDIR]/background3.png
++ I Colorset 120 bg white
++ I Colorset 121 bg white
+
+Style "FvwmPager" NoTitle, WindowListSkip, Sticky, !Handles, BorderWidth 1, BorderColorset 8, StaysOnBottom, NeverFocus
+
+DestroyModuleConfig FvwmPager: *
+*FvwmPager: Colorset 0 100
+*FvwmPager: Colorset 1 101
+*FvwmPager: Colorset 2 102
+*FvwmPager: Colorset 3 103
+*FvwmPager: HilightColorset 0 110
+*FvwmPager: HilightColorset 1 111
+*FvwmPager: HilightColorset 2 112
+*FvwmPager: HilightColorset 3 113
+#*FvwmPager: Colorset * 100
+*FvwmPager: Rows 1
+#*FvwmPager: HilightColorset * 11
+*FvwmPager: WindowColorsets 120 120
+*FvwmPager: UseSkipList
+*FvwmPager: SolidSeparators
+*FvwmPager: IconGeometry 16x16
+#*FvwmPager: Window3DBorders
+*FvwmPager: Font none
+#*FvwmPager: MiniIcons
