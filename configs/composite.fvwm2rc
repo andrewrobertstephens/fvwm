@@ -2,14 +2,26 @@
 # manage compositing stuff
 # ========================
 
+DestroyFunc FuncCompositeStop
+AddToFunc FuncCompositeStop
++ I PipeRead 'killall picom'
++ I FuncOptionSet composite off
+
+DestroyFunc FuncCompositeStart
+AddToFunc FuncCompositeStart
++ I PipeRead 'picom -c -i 1 -e 1 -b -m 1'
++ I FuncOptionSet composite on
+
 DestroyFunc FuncComposite
 AddToFunc FuncComposite
-+ I FuncOptionGet FVWM_COMPOSITE
-+ I PipeRead 'killall picom'
-+ I Test (EnvMatch FVWM_COMPOSITE on) PipeRead 'picom -c -i 1 -e 1 -b -m 1'
++ I FuncOptionGet composite
++ I PipeRead 'if [ $[Infostore.composite] == "on" ]; then \
+                echo FuncCompositeStart; \
+              else \
+                echo FuncCompositeStop; \
+              fi'
 
-DestroyFunc FuncCompositeSet
-AddToFunc FuncCompositeSet
-+ I FuncOptionSet FVWM_COMPOSITE "$0"
-+ I Restart
-
+DestroyMenu MenuComposite
+AddToMenu MenuComposite
++ "Composite ON" FuncCompositeStart
++ "Composite OFF" FuncCompositeStop

@@ -3,9 +3,9 @@
 DestroyModuleConfig FF-Notify: *
 *FF-Notify: Colorset 3
 *FF-Notify: ItemColorset 4
-*FF-Notify: Font $[FVWM_FONT]
-*FF-Notify: ButtonFont $[FVWM_FONT]
-*FF-Notify: TimeoutFont $[FVWM_FONT]
+*FF-Notify: Font $[infostore.font]
+*FF-Notify: ButtonFont $[infostore.font]
+*FF-Notify: TimeoutFont $[infostore.font]
 *FF-Notify: GrabServer
 #*FF-Notify: WarpPointer
 *FF-Notify: Command Beep
@@ -25,5 +25,10 @@ AddToFunc FuncNotificationDaemon
 
 DestroyFunc FuncNotify
 AddToFunc FuncNotify
-+ I Exec exec dunstctl close-all
 + I Exec exec notify-send "$0"
+
+DestroyFunc FuncNotifyClear
+AddToFunc FuncNotifyClear
++ I Exec exec dunstctl close-all
++ I FuncNotify "$0"
+

@@ -1,0 +1,108 @@
+# ==========================================================================
+# Window stuff
+# ==========================================================================
+
+# key bindings =============================================================
+
+Key Up WTFS246 4 Silent Maximize
+Key Left WTFS246 4 Silent FuncSnapLeft
+Key Right WTFS246 4 Silent FuncSnapRight
+Key I WTFS246 4 Silent FuncThumbnail
+Key R WTFS246 4 Silent FuncResizeInteractive
+Key Left WTFS246 4C Silent MoveAndGoToDesk '-1'
+Key Right WTFS246 4C Silent MoveAndGoToDesk '+1'
+
+# mouse bindings ===========================================================
+
+Mouse 3 T A Menu MenuWindow
+Mouse 0 $[infostore.close_button] A Close
+Mouse 0 $[infostore.maximize_button] A Maximize
+Mouse 0 $[infostore.minimize_button] A FuncThumbnail
+Mouse 1 I A Iconify
+Mouse 1 WTFS246 4 FuncFvwmRaiseLowerX Move
+
+# show icons when mouse hits left edge of screen ===========================
+
+EdgeCommand Left All (Iconic) Raise
+
+# move window to different desk, and follow it =============================
+
+DestroyFunc FuncMoveAndGoToDesk
+AddToFunc FuncMoveAndGoToDesk
++ I MoveToDesk $0 0 0 3
++ I GotoDesk $0 0 0 3
++ I Focus $[w.id]
+
+# interactively resize window ==============================================
+
+DestroyFunc FuncResizeInteractive
+AddToFunc FuncResizeInteractive
++ I Resize Direction SE warptoborder
+
+# snap (50%) to the left of the screen =====================================
+
+DestroyFunc FuncSnapLeft
+AddToFunc FuncSnapLeft
++ I ResizeMoveMaximize 49wa 95wa +0 +0
+
+# snap (50%) to the right of the screen ====================================
+
+DestroyFunc FuncSnapRight
+AddToFunc FuncSnapRight
++ I ResizeMoveMaximize 49wa 95wa -0 +0
+
+# create thumbnail for window and iconify ==================================
+
+DestroyFunc FuncThumbnail
+AddToFunc FuncThumbnail
++ I Raise
++ I PipeRead 'twidth=$[infostore.thumbnail_size]; \
+              theight=$(($[infostore.thumbnail_size]/3*2)); \
+              rsvg-convert -w $[infostore.icon_size] -h $[infostore.icon_size] $[w.MiniIconFile] > $[FVWM_USERDIR]/tmp/appicon.png; \
+              import -window $[w.id] -thumbnail ${twidth}!x${theight}! $[FVWM_USERDIR]/tmp/$[w.id].png; \
+              composite -geometry +5+5 $[FVWM_USERDIR]/tmp/appicon.png $[FVWM_USERDIR]/tmp/$[w.id].png $[FVWM_USERDIR]/thumbnails/$[w.id].png'
++ I WindowStyle IconOverride, Icon $[FVWM_USERDIR]/thumbnails/$[w.id].png
++ I Iconify
+
+# fix thumbnails when one is deiconified ===================================
+
+DestroyFunc FuncThumbnailRestore
+AddToFunc FuncThumbnailRestore
++ I DestroyWindowStyle $[w.id]
++ I All (Iconic, CurrentPage) PlaceAgain Icon
+
+DestroyModuleConfig FE-Thumbnail: *
+*FE-Thumbnail: deiconify FuncThumbnailRestore
+
+# menus for windows ========================================================
+
+DestroyMenu MenuLayer
+AddToMenu MenuLayer
++ "Top"		Layer 0 6
++ "Default"	Layer 0 4
++ "Bottom"	Layer 0 2
+
+DestroyMenu MenuSendTo
+AddToMenu MenuSendTo
++ "Desktop 0" MoveToDesk 0 0
++ "Desktop 1" MoveToDesk 0 1
++ "Desktop 2" MoveToDesk 0 2
++ "Desktop 3" MoveToDesk 0 3
+
+DestroyMenu MenuSnap
+AddToMenu MenuSnap
++ "Left" FuncSnapLeft
++ "Right" FuncSnapRight
+
+DestroyMenu MenuWindow
+AddToMenu MenuWindow
++ "Layer" Popup MenuLayer
++ "Send To" Popup MenuSendTo
++ "Snap" Popup MenuSnap
++ "Identify" Module FvwmIdent
++ "Resize" FuncResizeInteractive
++ "Thumbnail" Thumbnail
++ "Maximize" Maximize
++ "Sticky" Stick
++ "Close" Close
++ "Destroy" Destroy

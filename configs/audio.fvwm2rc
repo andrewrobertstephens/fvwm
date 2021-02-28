@@ -1,0 +1,15 @@
+# ===================
+# Audio-related stuff
+# ===================
+
+DestroyFunc FuncVolumeDown
+AddToFunc FuncVolumeDown
++ I Exec exec sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%" 
+
+DestroyFunc FuncVolumeUp
+AddToFunc FuncVolumeUp
++ I Exec exec sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"
+
+DestroyFunc FuncAudioRestart
+AddToFunc FuncAudioRestart
++ I PipeRead 'pulseaudio --k; pulseaudio --start'

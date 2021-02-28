@@ -4,6 +4,7 @@
 
 #Key Tab A M Menu MenuWindowList Root c c
 Key Tab A M WindowList Root c c CurrentDesk, NoGeometry, CurrentAtEnd, IconifiedAtEnd
+Key Tab A 4 WindowList Root c c CurrentDesk, NoGeometry, CurrentAtEnd, NoIcons
 
 Key XF86MonBrightnessDown A N FuncBacklightSet "-dec 5"
 Key XF86MonBrightnessUp A N FuncBacklightSet "-inc 5"
@@ -14,22 +15,19 @@ Key XF86MonBrightnessUp A N FuncBacklightSet "-inc 5"
 Key XF86AudioLowerVolume A N Function FuncVolumeDown
 Key XF86AudioRaiseVolume A N Function FuncVolumeUp
 
-Key Up WTFS246 4 StartReturn
-Key Left WTFS246 4 SnapLeft
-Key Right WTFS246 4 SnapRight
-Key Left WTFS246 4C MoveAndGoToDesk '-1'
-Key Right WTFS246 4C MoveAndGoToDesk '+1'
-Key Left A MC GotoDesk -1 0 0 3
-Key Right A MC GoToDesk +1 0 0 3
+
+Key Left A MC Silent GotoDesk -1 0 0 3
+Key Right A MC Silent GoToDesk +1 0 0 3
 Key M A MC Menu MenuMan Root c c
-Key R A 4 Exec exec gmrun
-Key T A 4 Exec exec $[FVWM_TERMINAL]
-Key E A 4 Exec exec $[FVWM_EDITOR]
-Key F A 4 Exec exec $[FVWM_FILER]
-Key B A 4 Exec exec $[FVWM_BROWSER]
-Key C A 4 Exec exec $[FVWM_EDITOR] $[FVWM_USERDIR]/config
-Key L A 4 Exec exec $[FVWM_TERMINAL] -e tail -f $[FVWM_USERDIR]/fvwm-errors
+Key R A MC Exec exec gmrun
+Key T A MC Exec exec $[infostore.terminal]
+Key E A MC Exec exec $[infostore.editor]
+Key F A MC Exec exec $[infostore.filer]
+Key B A MC Exec exec $[infostore.browser]
+Key C A MC Exec exec $[infostore.editor] $[FVWM_USERDIR]/config
+Key L A MC Exec exec $[infostore.terminal] -e tail -f $[FVWM_USERDIR]/fvwm-errors
+Key I A MC Module FvwmIdent
 Key Delete A MC Exec exec lxtask
 Key BackSpace A MC Restart
 Key Return A MC Module FvwmConsole
-Key Print A N Screenshot
+Key Print A N FuncScreenshot

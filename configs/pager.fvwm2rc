@@ -1,5 +1,5 @@
 # =======================
-# FvwmPager configuration
+# FP-Floating configuration
 # =======================
 
 DestroyFunc PagerColorsets
@@ -15,24 +15,24 @@ AddToFunc PagerColorsets
 + I Colorset 120 bg white
 + I Colorset 121 bg white
 
-Style "FvwmPager" NoTitle, WindowListSkip, Sticky, !Handles, BorderWidth 1, BorderColorset 8, StaysOnBottom, NeverFocus
+Style "FP-Floating" NoTitle, WindowListSkip, Sticky, !Handles, BorderWidth 1, BorderColorset 8, StaysOnBottom, NeverFocus
 
-DestroyModuleConfig FvwmPager: *
-*FvwmPager: Colorset 0 100
-*FvwmPager: Colorset 1 101
-*FvwmPager: Colorset 2 102
-*FvwmPager: Colorset 3 103
-*FvwmPager: HilightColorset 0 110
-*FvwmPager: HilightColorset 1 111
-*FvwmPager: HilightColorset 2 112
-*FvwmPager: HilightColorset 3 113
-#*FvwmPager: Colorset * 100
-*FvwmPager: Rows 1
-#*FvwmPager: HilightColorset * 11
-*FvwmPager: WindowColorsets 120 120
-*FvwmPager: UseSkipList
-*FvwmPager: SolidSeparators
-*FvwmPager: IconGeometry 16x16
-#*FvwmPager: Window3DBorders
-*FvwmPager: Font none
-#*FvwmPager: MiniIcons
+DestroyModuleConfig FP-Floating: *
+*FP-Floating: Colorset 0 100
+*FP-Floating: Colorset 1 101
+*FP-Floating: Colorset 2 102
+*FP-Floating: Colorset 3 103
+*FP-Floating: HilightColorset 0 110
+*FP-Floating: HilightColorset 1 111
+*FP-Floating: HilightColorset 2 112
+*FP-Floating: HilightColorset 3 113
+#*FP-Floating: Colorset * 100
+*FP-Floating: Rows 1
+#*FP-Floating: HilightColorset * 11
+*FP-Floating: WindowColorsets 120 120
+*FP-Floating: UseSkipList
+*FP-Floating: SolidSeparators
+*FP-Floating: IconGeometry 16x16
+#*FP-Floating: Window3DBorders
+*FP-Floating: Font none
+#*FP-Floating: MiniIcons

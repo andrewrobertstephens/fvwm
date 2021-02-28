@@ -6,25 +6,66 @@ DestroyFunc FuncSystemTray
 AddToFunc FuncSystemTray
 + I Exec exec stalonetray --geometry 1x1 --grow-gravity E --icon-gravity W --kludges force_icons_size -i 16 --parent-bg  true -d none
 
+Style "FvwmPager" NoTitle, WindowListSkip, Sticky, !Handles, BorderWidth 1, BorderColorset 8, StaysOnBottom, NeverFocus
+
+DestroyModuleConfig FvwmPager: *
+*FvwmPager: Colorset 0 100
+*FvwmPager: Colorset 1 101
+*FvwmPager: Colorset 2 102
+*FvwmPager: Colorset 3 103
+*FvwmPager: HilightColorset 0 110
+*FvwmPager: HilightColorset 1 111
+*FvwmPager: HilightColorset 2 112
+*FvwmPager: HilightColorset 3 113
+#*FvwmPager: Colorset * 100
+*FvwmPager: Rows 1
+#*FvwmPager: HilightColorset * 11
+*FvwmPager: WindowColorsets 120 120
+*FvwmPager: UseSkipList
+*FvwmPager: SolidSeparators
+*FvwmPager: IconGeometry 16x16
+#*FvwmPager: Window3DBorders
+*FvwmPager: Font none
+#*FvwmPager: MiniIcons
+
+DestroyModuleConfig FvwmIconMan: *
+*FvwmIconMan: Colorset 0
+*FvwmIconMan: Font $[infostore.font]
+*FvwmIconMan: ManagerGeometry 0x1
+*FvwmIconMan: ButtonGeometry 1x1
+
 Style "FB-Panel" NoTitle, Sticky, WindowListSkip, !Handles, FixedSize, BorderColorset 6, StaysOnBottom, BorderWidth 2, CirculateSkip
 
+DestroyFunc FuncPanelMiniButton
+AddToFunc FuncPanelMiniButton
++ I *FB-Panel: (1x1, Icon $0:16x16, Action(Mouse 1) Exec exec $0)
+
 DestroyModuleConfig FB-Panel: *
-*FB-Panel: Geometry $[vp.width]x$[FVWM_PANEL_HEIGHT]+0+0
-*FB-Panel: Font "$[FVWM_FONT]"
+*FB-Panel: Geometry $[vp.width]x$[infostore.panel_height]+0+0
+*FB-Panel: Font "$[infostore.font]"
 *FB-Panel: Colorset 6
 *FB-Panel: Rows 1
 *FB-Panel: Frame 0
 *FB-Panel: Padding 0 0
 *FB-Panel: (2x1) 
-*FB-Panel: (9x1, Id SystemMenuButton Left, Icon '$[FVWM_USERDIR]/system.svg:57x20', Action(Mouse 1) `Menu MenuSystem Rectangle +$left+$[FVWM_PANEL_HEIGHT] 0 -0m`)
-*FB-Panel: (10x1, Id ApplicationsMenuButton, Left, Title "Applications", Action(Mouse 1) `Menu XDGMenu Rectangle +$left+$[FVWM_PANEL_HEIGHT] 0 -0m`)
-*FB-Panel: (8x1, Id PlacesMenuButton, Left, Title "Places", Action(Mouse 1) `Menu MenuPlaces Rectangle +$left+$[FVWM_PANEL_HEIGHT] 0 -0m`)
-#*FB-Panel: (80x1, Left, Swallow "FvwmIconMan" "FvwmIconMan")
+*FB-Panel: (9x1, Id SystemMenuButton Left, Icon '$[FVWM_USERDIR]/system.svg:57x20', Action(Mouse 1) `Menu MenuSystem Rectangle +$left+$[infostore.panel_height] 0 -0m`)
+*FB-Panel: (10x1, Id ApplicationsMenuButton, Left, Title "Applications", Action(Mouse 1) `Menu XDGMenu Rectangle +$left+$[infostore.panel_height] 0 -0m`)
+*FB-Panel: (8x1, Id PlacesMenuButton, Left, Title "Places", Action(Mouse 1) `Menu MenuPlaces Rectangle +$left+$[infostore.panel_height] 0 -0m`)
+
+#*FB-Panel: (20x1, Container(Rows 1))
+#FuncPanelMiniButton $[FVWM_TERMINAL]
+#FuncPanelMiniButton $[FVWM_FILER]
+#FuncPanelMiniButton $[FVWM_EDITOR]
+#FuncPanelMiniButton $[FVWM_BROWSER]
+#FuncPanelMiniButton krita
+#FuncPanelMiniButton inkscape
+#FuncPanelMiniButton slack
+#*FB-Panel: (End)
+
+#*FB-Panel: (20x1, Swallow "FvwmIconMan" "Module FvwmIconMan")
+
 *FB-Panel: (70x1)
 *FB-Panel: (25x1, Right, Swallow (NoClose, UseOld) "stalonetray" FuncSystemTray)
-*FB-Panel: (25x1, Padding 20 2, Swallow "FvwmPager" "FvwmPager 0 3")
-#*FB-Panel: (4x1, Swallow "FvwmScript-Wifi" `FvwmScript FvwmScript-Wifi`)
-#*FB-Panel: (4x1, Swallow "FvwmScript-Battery" `FvwmScript FvwmScript-Battery`)
-#*FB-Panel: (4x1, Swallow "FvwmScript-Volume" `FvwmScript FvwmScript-Volume`)
+*FB-Panel: (25x1, Padding 20 2, Swallow "FvwmPager" "Module FvwmPager 0 3")
 *FB-Panel: (14x1, Swallow "FvwmScript-Clock" `FvwmScript FvwmScript-Clock`)
 *FB-Panel: (2x1)

@@ -1,85 +1,100 @@
-FvwmScript FvwmScript-Battery
-FvwmScript FvwmScript-Battery
-FvwmScript FvwmScript-Battery
-FvwmScript FvwmScript-Battery
-FvwmScript FvwmScript-Battery
-FvwmScript FvwmScript-Battery
-FvwmScript FvwmScript-Battery
-FvwmScript FvwmScript-Battery
-FvwmScript FvwmScript-Volume
-FvwmForm FvwmForm-XDGMenu-Config
-FvwmInfo
-FvwmModule FvwmInfo
-Module FvwmIconBox
+SendToModule FB-Dock ChangeButton lxterminal Title '*'
+SendToModule FB-Dock ChangeButton lxterminal Title ''
+SendToModule FB-Dock ChangeButton lxterminal Title '_'
+SendToModule FB-Dock ChangeButton lxterminal Title ' '
+SendToModule FB-Dock ChangeButton lxterminal Title '-'
+SendToModule FB-Dock ChangeButton lxterminal Title '[]'
+SendToModule FB-Dock ChangeButton lxterminal Colorset 0
+SendToModule FB-Dock ChangeButton lxterminal Colorset 0
+SendToModule FB-Dock ChangeButton lxterminal Colorset 1
+SendToModule FB-Dock ChangeButton lxterminal Colorset 2
+SendToModule FB-Dock ChangeButton lxterminal Colorset 3
+SendToModule FB-Dock ChangeButton lxterminal Colorset 4
+SendToModule FB-Dock ChangeButton lxterminal Colorset 5
+SendToModule FB-Dock ChangeButton lxterminal Colorset 6
+SendToModule FB-Dock ChangeButton lxterminal Colorset 7
+SendToModule FB-Dock ChangeButton lxterminal Colorset 8
+SendToModule FB-Dock ChangeButton lxterminal Colorset 9
+FvwmIconMan
 Module FvwmIconMan
-move
-Menu MenuPlaces
-Menu applications
-Menu arch-applications
-Menu MenuSystem
-Menu MenuSystem
-Menu MenuBatteryPopup
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-VolumeGet
-CompositeRestart
-CompositeRestart
-MoveAndGoToDesk 1
-MoveAndGoToDesk 1
-MoveAndGoToDesk 1
-FvwmForm FvwmForm-ManPage
-FvwmForm FvwmForm-QuitVerify
-FvwmScript FvwmScript-ScreenDump
-FvwmScript FvwmScript-ScreenDump
-ReasonableSize
-ReasonableSize
-ReasonableSize
-ReasonableSize
-ReasonableSize
-ReasonableSize
-ReasonableSize
-ReasonableSize
-ReasonableSize
-ReasonableSize
-ReasonableSize
-ReasonableSize
-Screenshot
-Exec exec echo hello
-Exec exec pcmanfm
-FuncNotify hello
-FuncNotify hello
-SendToModule FB-Dock ChangeButton lxterminal Icon lxterminal:64x64
-SendToModule FB-Dock ChangeButton lxterminal Icon lxterminal:128x128
-SendToModule FB-Dock ChangeButton lxterminal Title lxterminal
-SendToModule FB-Dock ChangeButton lxterminal Icon lxterminal:16x16
-SendToModule FB-Dock ChangeButton lxterminal Icon lxterminal:32x32
-SendToModule FB-Dock ChangeButton pcmanfm Icon lxterminal:32x32
-SendToModule FB-Dock ChangeButton pcmanfm Icon pcmanfm:32x32
-SendToModule FB-Dock ChangeButton pcmanfm Title pcmanfm
-exec exec echo 'hello'
-exec exec xmessage 'hello'
-exec exec xmessage $FVWM_FILER
-exec exec xmessage $FVWM_COMPOSITE
-FvwmForm FF-Notify
-FvwmForm FF-Notify
-FvwmForm FF-Notify
+Module FvwmIconMan
+Module FvwmIconMan -transient
+Module FvwmIconMan -transient
+Module FvwmIconMan
 FvwmIdent
-FvwmForm FF-Notify
-FvwmIdent
-GoToDessk 0 0 0 4
+Style * IconTitle
+Style * !IconTitle
+Echo 'hello'
+Module FvwmPager 0 3 -transient
+Module FvwmPager 0 3 -transient
+Module FvwmPager
+Module FvwmPager 0 3
+Module FvwmPager 0 3
+Module FvwmPager 0 3
+Module FvwmPager 0 3
+Module FvwmPager FP-Floating 0 3
+Module FvwmPager 0 3
+Module FvwmPager "FP-Floating" 0 3
+Module FvwmPager FP-Floating 0 3
+Module FvwmPager FP-Panel 0 3
+Module FvwmPager FP-Panel 0 3 -transient
+Module FvwmButtons FvwmWarf
+Module FvwmButtons FvwmWarf
+Module FvwmButtons FvwmDock
+Module FvwmButtons FB-Warf
+Module FvwmButtons FB-Warf
+Module FvwmButtons FB-Warf
+Module FvwmButtons FB-Warf
+FuncWarfUpdate
+FuncWarfUpdate
+FuncWarfUpdate
+FuncWarfUpdate
+Move
+Move
+Move
+FuncWarfUpdate
+FuncWarfUpdate
+FuncWarfUpdate
+FuncWarfUpdate
+FuncWarfUpdate
+FuncWarfUpdate
+FuncWarfUpdate
+FuncWarfUpdate
+FuncWarfUpdate
+FuncWarfUpdate
+FuncWarfUpdate
+Module FvwmIdent
+FuncOptionSet FVWM_POOP 'hello'
+Next (FvwmDock) Raise
+Current (FvwmDock) Raise
+Current (FvwmButtons) Raise
+Next (FvwmButtons) Raise
+Next (FB-Dock) Raise
+FuncCloudStorage
+All (Iconic) Raise
+close
+close
+close
+Maximize 100 100
+Maximize 100 100
+Maximize 100 100
+Maximize fullscreen 100 100
+Maximize
+Maximize ewmhiwa
+Maximize ewmhiwa
+FuncRaiseIcons
+FuncComposite
+FuncComposite
+FuncComposite
+FuncComposite
+Resize
+Resize
+Resize NorthWest
+Resize NorthWest
+Pick Resize NorthWest
+Pick Resize NorthWest warptoborder
+Pick Resize NorthWest warptoborder southwest
+Pick Resize NorthWest fixedirection
+Pick Resize Direction SE
+Pick Resize Direction SE
+Pick Resize Direction SE warptoborder

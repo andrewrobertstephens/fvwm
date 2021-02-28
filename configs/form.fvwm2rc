@@ -7,9 +7,9 @@ Style "FvwmForm-*" NoTitle
 DestroyModuleConfig FvwmForm-Quit: *
 *FvwmForm-Quit: Colorset 3
 *FvwmForm-Quit: ItemColorset 4
-*FvwmForm-Quit: Font $[FVWM_FONT]
-*FvwmForm-Quit: ButtonFont $[FVWM_FONT]
-*FvwmForm-Quit: TimeoutFont $[FVWM_FONT]
+*FvwmForm-Quit: Font $[infostore.font]
+*FvwmForm-Quit: ButtonFont $[infostore.font]
+*FvwmForm-Quit: TimeoutFont $[infostore.font]
 *FvwmForm-Quit: GrabServer
 #*FvwmForm-Quit: WarpPointer
 *FvwmForm-Quit: Command Beep

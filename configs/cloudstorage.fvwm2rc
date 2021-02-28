@@ -1,0 +1,11 @@
+# ===================
+# Cloud storage stuff
+# ===================
+
+Style megasync NoTitle, !Borders, WindowListSkip, DecorateTransient, FixedPPosition, !Iconifiable
+
+DestroyFunc FuncCloudStorage
+AddToFunc FuncCloudStorage
++ I Exec exec megasync &
+#+ I Exec exec pcloud &
+

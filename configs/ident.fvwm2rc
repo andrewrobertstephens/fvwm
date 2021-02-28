@@ -4,4 +4,4 @@
 
 DestroyModuleConfig FvwmIdent: *
 *FvwmIdent: Colorset 3
-*FvwmIdent: Font $[FVWM_FONT]
+*FvwmIdent: Font $[infostore.font]

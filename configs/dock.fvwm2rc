@@ -2,52 +2,41 @@
 # FvwmButtons based dock
 # ======================
 
-DestroyFunc FuncDockButton
-AddToFunc FuncDockButton
-+ I PipeRead 'echo SetEnv hsize $(($[FVWM_DOCK_ICON_SIZE]/3*2))'
-+ I *FB-Dock: (1x1, id $0, Icon $0:$[FVWM_DOCK_ICON_SIZE]x$[FVWM_DOCK_ICON_SIZE], ActiveIcon $0:$[hsize]x$[hsize], Action(Mouse 1) FuncDockLaunch $1, Action(Mouse 3) Exec exec $1)
-+ I UnsetEnv hsize
-
-DestroyFunc FuncDockSelect
-AddToFunc FuncDockSelect
-+ I Focus
-+ I Iconify false
-+ I Raise
-
-DestroyFunc FuncDockLaunch
-AddToFunc FuncDockLaunch
-+ I Next ($0, CurrentDesk) FuncDockSelect
-+ I TestRc (NoMatch) Exec exec $0
-
-DestroyFunc FuncPlaceDock
-AddToFunc FuncPlaceDock
-+ I ThisWindow (FB-Dock) PipeRead 'echo Move +$(($[vp.width]/2-$[w.width]/2))p -0 ewmhiwa'
-
-DestroyFunc FuncStartDock
-AddToFunc FuncStartDock
-+ I Module FvwmEvent FE-PlaceDock
-+ I Module FvwmButtons FB-Dock
+Style FB-Dock NoTitle, Sticky, WindowListSkip, !Handles, FixedSize, BorderColorset 8, BorderWidth 2
 
 EdgeCommand Bottom Next (FB-Dock) Raise
 
-Style FB-Dock NoTitle, Sticky, WindowListSkip, !Handles, FixedSize, BorderColorset 8, BorderWidth 2
+DestroyFunc FuncDockButton
+AddToFunc FuncDockButton
++ I PipeRead 'echo SetEnv hsize $(($[infostore.icon_size]/3*2))'
++ I *FB-Dock: (id $0, Icon $0:$[infostore.icon_size]x$[infostore.icon_size], ActiveIcon $0:$[hsize]x$[hsize], Action(Mouse 1) Exec exec $0)
++ I UnsetEnv hsize
 
 DestroyModuleConfig FB-Dock: *
-PipeRead 'echo *FB-Dock: Geometry -0+$(($[FVWM_PANEL_HEIGHT]+10))'
-*FB-Dock: Columns 1
+*FB-Dock: Geometry +2000+2000
+*FB-Dock: Rows 1
 *FB-Dock: Colorset 8
 *FB-Dock: Frame 0
 *FB-Dock: Padding 3 3
-FuncDockButton lxterminal lxterminal
-FuncDockButton pcmanfm pcmanfm
-FuncDockButton gvim gvim
-FuncDockButton chromium chromium
-FuncDockButton krita krita
-FuncDockButton Inkscape inkscape
-FuncDockButton libreoffice libreoffice
-FuncDockButton filezilla filezilla
+*FB-Dock: BoxSize smart
+FuncDockButton $[infostore.terminal]
+FuncDockButton $[infostore.filer]
+FuncDockButton $[infostore.editor]
+FuncDockButton chromium
+FuncDockButton firefox
+FuncDockButton krita
+FuncDockButton inkscape
+FuncDockButton libreoffice
+FuncDockButton filezilla
+FuncDockButton slack
+
+#*FB-Dock: (15x1, Swallow "FvwmIconMan" "Module FvwmIconMan")
 #*FB-Dock: (2x1, Padding 5 5, Swallow "FvwmPager" "FvwmPager 0 3")
 
-#DestroyModuleConfig FE-PlaceDock: *
-#*FE-PlaceDock: add_window FuncPlaceDock
+DestroyFunc FuncDockPosition
+AddToFunc FuncDockPosition
++ I ThisWindow (FB-Dock) PipeRead 'echo Move +$(($[vp.width]/2-$[w.width]/2))p -0 ewmhiwa'
+
+DestroyModuleConfig FE-DockPosition: *
+*FE-DockPosition: add_window FuncDockPosition
 

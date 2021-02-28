@@ -2,9 +2,9 @@
 # Assign icons to apps
 # ====================
 
-+ I Style "*" MiniIcon default:$[FVWM_ICON_SIZE]x$[FVWM_ICON_SIZE]
+Style "*" MiniIcon default:$[infostore.icon_size]x$[infostore.icon_size]
 
-+ I PipeRead 'cd $FVWM_USERDIR/icons/current; \
-              for i in *.svg; do \
-                echo Style \"${i%.svg}\" MiniIcon ${i%.svg}:$[FVWM_ICON_SIZE]x$[FVWM_ICON_SIZE]; \
-              done'
+PipeRead 'cd $FVWM_USERDIR/icons/current; \
+          for i in *.svg; do \
+            echo Style \"${i%.svg}\" MiniIcon ${i%.svg}:$[infostore.icon_size]x$[infostore.icon_size]; \
+          done'

@@ -4,38 +4,29 @@
 # Environment Variables
 # ===========================================================================
 
-SetEnv FVWM_TERMINAL lxterminal
-SetEnv FVWM_EDITOR gvim
-SetEnv FVWM_BROWSER chromium
-SetEnv FVWM_FILER pcmanfm
-SetEnv FVWM_AUDIO deadbeef
-SetEnv FVWM_VIDEO vlc
-SetEnv FVWM_DOCK_ICON_SIZE 48
-SetEnv FVWM_DESKTOP_MAX 8
-SetEnv FVWM_FONT_NAME sans
-SetEnv FVWM_FONT_SIZE 7.5
-SetEnv FVWM_ICON_SIZE 48
-SetEnv FVWM_PANEL_HEIGHT 24
-SetEnv FVWM_PANEL_DARK false
-SetEnv FVWM_THUMBNAIL_SIZE 128
-SetEnv FVWM_BACKGROUNDS '$[HOME]/.backgrounds'
-#PipeRead 'echo SetEnv FVWM_STRUT_LEFT $(($[FVWM_ICON_SIZE]+20))'
-SetEnv FVWM_STRUT_LEFT 10
-PipeRead 'echo SetEnv FVWM_STRUT_RIGHT $(($[FVWM_ICON_SIZE]+20))'
-#SetEnv FVWM_STRUT_RIGHT 10
-PipeRead 'echo SetEnv FVWM_STRUT_TOP $(($[FVWM_PANEL_HEIGHT]+10))'
-SetEnv FVWM_STRUT_BOTTOM 10
-SetEnv FVWM_FONT 'xft:$[FVWM_FONT_NAME]:size=$[FVWM_FONT_SIZE]:bold:antialias=True'
-
-SetEnv FVWM_CLOSE_BUTTON 2
-SetEnv FVWM_MAXIMIZE_BUTTON 4
-SetEnv FVWM_MINIMIZE_BUTTON 6
+InfoStoreAdd terminal qterminal
+InfoStoreAdd editor gvim
+InfoStoreAdd filer pcmanfm
+InfoStoreAdd icon_size 48
+InfoStoreAdd font_name sans
+InfoStoreAdd font_size 7.5
+InfoStoreAdd font 'xft:$[infostore.font_name]:size=$[infostore.font_size]:bold:antialias=True'
+InfoStoreAdd panel_height 24
+InfoStoreAdd thumbnail_size 108
+InfoStoreAdd background_dir '$[FVWM_USERDIR]/backgrounds'
+PipeRead 'echo InfoStoreAdd strut_top $(($[infostore.panel_height]+10))'
+InfoStoreAdd strut_left 10
+InfoStoreAdd strut_right 10
+InfoStoreAdd strut_bottom 10
+InfoStoreAdd close_button 2
+InfoStoreAdd maximize_button 4
+InfoStoreAdd minimize_button 6
 
 # ==========================================================================
 # Miscellaneous Configurations
 # ==========================================================================
 
-DefaultFont "$[FVWM_FONT]"
+DefaultFont "$[infostore.font]"
 DesktopSize 1x1
 EdgeThickness 1
 #EdgeResistance 500 500
@@ -45,7 +36,7 @@ IgnoreModifiers L25
 ImagePath $[FVWM_USERDIR]/icons/current;.svg:+:$[FVWM_USERDIR]/icons/default;.svg:+:$[FVWM_USERDIR]/decor/current
 ModuleTimeout 10
 OpaqueMoveSize -1
-EwmhBaseStruts $[FVWM_STRUT_LEFT] $[FVWM_STRUT_RIGHT] $[FVWM_STRUT_TOP] $[FVWM_STRUT_BOTTOM]
+EwmhBaseStruts $[infostore.strut_left] $[infostore.strut_right] $[infostore.strut_top] $[infostore.strut_bottom]
 Colorset 13 bg black, fg white
 CursorStyle DEFAULT left_ptr
 CursorStyle MENU left_ptr
@@ -53,29 +44,28 @@ CursorStyle TITLE left_ptr
 CursorStyle WAIT watch
 BusyCursor Read off
 
-
-#Style * IconBox $[FVWM_STRUT_LEFT] $[FVWM_STRUT_TOP] -10 -$[FVWM_THUMBNAIL_SIZE], IconFill t r
-Style * "$[FVWM_FONT]"
+Style * IconBox +10 $[infostore.strut_top] -10 -$[infostore.strut_bottom], IconFill t l
+Style * "$[infostore.font]"
 Style * ClickToFocus
 Style * DecorateTransient
 #Style * NakedTransient
 Style * ResizeOpaque
-Style * NoIconTitle
+#Style * NoIconTitle
 #Style * !IconTitle
-#Style * IconTitleColorset 2
+Style * IconTitleColorset 2
 Style * IconTitleRelief 0
 #Style * IconBackgroundColorset 1
 #Style * IconBackgroundRelief 1
 #Style * PositionPlacement center
 Style * MinOverlapPlacement
-Style * NoIcon
+#Style * NoIcon
 Style * EWMHMiniIconOverride
 Style * BorderWidth 2
 Style * HandleWidth 3
 Style * Colorset 1
 Style * HilightColorset 2
 
-Style "FvwmButtons" NeverFocus
+Style FvwmButtons NeverFocus
 Style chromium !UsePPosition
 
 # ===========================================================================
@@ -99,18 +89,14 @@ AddToFunc WindowListFunc
 # Functions
 # ==========================================================================
 
-DestroyFunc FuncBackgroundSet
-AddToFunc FuncBackgroundSet
-+ I FuncNotify "Changing background..."
-+ I PipeRead 'convert -resize $[vp.width] "$0" $FVWM_USERDIR/background$[desk.n].png; \
-              convert -fill black -colorize 50% "$0" $FVWM_USERDIR/pager/background$[desk.n].png'
-+ I Function PagerColorsets
-+ I Exec exec fvwm-root -r $FVWM_USERDIR/background$[desk.n].png
-
 DestroyFunc FuncBacklightSet
 AddToFunc FuncBacklightSet
 + I PipeRead 'xbacklight $0'
-+ I Function FuncNotify '`xbacklight`'
++ I Function FuncNotify 'Backlight: `xbacklight`%'
+
+DestroyFunc FuncBackup
+AddToFunc FuncBackup
++ I Exec exec $[FVWM_TERMINAL] -e sudo backup-rclone.sh > /tmp/rclone-backup.log
 
 DestroyFunc FuncChangeDecor
 AddToFunc FuncChangeDecor
@@ -130,47 +116,17 @@ AddToFunc FuncManPage
 
 DestroyFunc FuncOptionGet
 AddToFunc FuncOptionGet
-+ I PipeRead 'echo SetEnv $0 `cat "$[FVWM_USERDIR]/options/$0"`'
++ I Test (f $[FVWM_USERDIR]/options/$0) PipeRead 'echo InfoStoreAdd $0 `cat "$[FVWM_USERDIR]/options/$0"`'
 
 DestroyFunc FuncOptionSet
 AddToFunc FuncOptionSet
 + I PipeRead 'echo "$1" > "$[FVWM_USERDIR]/options/$0"'
-+ I Function FuncOptionGet $0
++ I InfoStoreAdd $0 $1
 
-DestroyFunc FuncVolumeDown
-AddToFunc FuncVolumeDown
-+ I Exec exec sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%" 
-
-DestroyFunc FuncVolumeUp
-AddToFunc FuncVolumeUp
-+ I Exec exec sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"
-
-DestroyFunc MoveAndGoToDesk
-AddToFunc MoveAndGoToDesk
-+ I MoveToDesk $0 0 0 3
-+ I GotoDesk $0 0 0 3
-+ I Focus $[w.id]
-
-DestroyFunc PulseAudioRestart
-AddToFunc PulseAudioRestart
-+ I PipeRead 'pulseaudio --k; pulseaudio --start'
-
-DestroyFunc Screenshot
-AddToFunc Screenshot
-+ I PipeRead 'scrot -d 5 -c ~/Pictures/%Y-%m-%d-%T-screenshot.png'
-+ I Exec exec $[FVWM_FILER] ~/Pictures
-
-DestroyFunc SnapLeft
-AddToFunc SnapLeft
-+ I ResizeMoveMaximize 49wa 95wa +0 +0
-
-DestroyFunc SnapRight
-AddToFunc SnapRight
-+ I ResizeMoveMaximize 49wa 95wa -0 +0
-
-DestroyFunc StartReturn
-AddToFunc StartReturn
-+ I ThisWindow (!Transient) Maximize
+DestroyFunc FuncScreenshot
+AddToFunc FuncScreenshot
++ I FuncNotify 'Saving screenshot...'
++ I PipeRead 'scrot ~/%Y-%m-%d-%T-screenshot.png'
 
 # ===========================================================================
 # Start Function
@@ -182,26 +138,21 @@ AddToFunc StartFunction
                 echo Read $i; \
               done'
 + I Read $[FVWM_USERDIR]/decor/current/theme.fvwm2rc
-
-#+ I Test (Init) Exec exec nm-applet &
-+ I Test (Init) Exec exec cbatticon -n &
-+ I Test (Init) Exec exec pasystray -a &
-+ I Test (Init) Exec exec insync start
++ I Test (Init) FuncNotificationDaemon
++ I Test (Init) FuncComposite
 + I Test (Init) PipeRead 'rm $[FVWM_USERDIR]/tmp/*'
-#+ I Test (Restart) All (Iconic) FuncThumbnailAgain
-
-+ I Test (Init) Function FuncNotificationDaemon
-
-+ I Function FuncComposite
-+ I Function PagerColorsets
-
++ I Test (Restart) All (Iconic) Test (f $[FVWM_USERDIR]/thumbnails/$[w.id].png) WindowStyle IconOverride, Icon $[FVWM_USERDIR]/thumbnails/$[w.id].png
++ I Test (Restart) All (Iconic) PlaceAgain
++ I PagerColorsets
 + I Module FvwmAnimate
 + I Module FvwmBacker
 + I Module FvwmCommandS
-
-+ I Module FvwmButtons FB-Panel
-#+ I Module FvwmEvent FE-Thumbnail
++ I Module FvwmEvent FE-DockPosition
 + I Module FvwmEvent FE-Maximize
-
-+ I Function FuncStartDock
++ I Module FvwmEvent FE-Thumbnail
++ I Module FvwmButtons FB-Dock
++ I Module FvwmButtons FB-Panel
++ I Test (Init) Exec exec cbatticon -n &
++ I Test (Init) Exec exec pasystray -a &
++ I Test (Init) FuncCloudStorage
 

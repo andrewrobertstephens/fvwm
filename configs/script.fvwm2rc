@@ -4,5 +4,5 @@
 
 DestroyModuleConfig FvwmScript: *
 *FvwmScript: Path $[FVWM_USERDIR]/scripts
-*FvwmScript: DefaultFont $[FVWM_FONT]
+*FvwmScript: DefaultFont $[infostore.font]
 *FvwmScript: DefaultColorset 6

@@ -3,6 +3,14 @@
 # - different backgrounds for each desktop
 # ========================================
 
+DestroyFunc FuncBackgroundSet
+AddToFunc FuncBackgroundSet
++ I FuncNotify "Changing background..."
++ I PipeRead 'convert -resize $[vp.width] "$0" $FVWM_USERDIR/background$[desk.n].png; \
+              convert -fill black -colorize 50% "$0" $FVWM_USERDIR/pager/background$[desk.n].png'
++ I Function PagerColorsets
++ I Exec exec fvwm-root -r $FVWM_USERDIR/background$[desk.n].png
+
 DestroyModuleConfig FvwmBacker: *
 *FvwmBacker: Command (Desk 0) Exec fvwm-root -r $[FVWM_USERDIR]/background0.png
 *FvwmBacker: Command (Desk 1) Exec fvwm-root -r $[FVWM_USERDIR]/background1.png
